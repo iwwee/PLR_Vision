@@ -159,10 +159,12 @@
 		7E71B0142089B28000AA0CB2 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E71B00C2089B28000AA0CB2 /* AboutViewController.swift */; };
 		7E71B0152089B28000AA0CB2 /* OpenCVMethods.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E71B00E2089B28000AA0CB2 /* OpenCVMethods.mm */; };
 		7E71B0162089B28000AA0CB2 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E71B0102089B28000AA0CB2 /* LoadingViewController.swift */; };
+		7E7A9B7B20AD092600E8CC9C /* CNN_ZH63_MODEL.md in Resources */ = {isa = PBXBuildFile; fileRef = 7E7A9B7A20AD092600E8CC9C /* CNN_ZH63_MODEL.md */; };
+		7E7A9B7D20AD234C00E8CC9C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7A9B7C20AD234C00E8CC9C /* DetailView.swift */; };
+		7E7A9B7F20AD236100E8CC9C /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E7A9B7E20AD236100E8CC9C /* DetailView.xib */; };
 		7EDD012E2089CA38000556A3 /* NYPlateJudge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD012B2089CA37000556A3 /* NYPlateJudge.cpp */; };
 		7EDD012F2089CA38000556A3 /* NYPlateDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD012D2089CA38000556A3 /* NYPlateDetect.cpp */; };
 		7EDD01312089CA51000556A3 /* svm.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7EDD01302089CA51000556A3 /* svm.xml */; };
-		7EDD014F208B0BE7000556A3 /* CNN_MODEL.md in Resources */ = {isa = PBXBuildFile; fileRef = 7EDD014E208B0BE6000556A3 /* CNN_MODEL.md */; };
 		7EDE3AB020A08C230091AA50 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDE3AAF20A08C230091AA50 /* VideoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -595,12 +597,14 @@
 		7E71B00C2089B28000AA0CB2 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		7E71B00E2089B28000AA0CB2 /* OpenCVMethods.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVMethods.mm; sourceTree = "<group>"; };
 		7E71B0102089B28000AA0CB2 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		7E7A9B7A20AD092600E8CC9C /* CNN_ZH63_MODEL.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CNN_ZH63_MODEL.md; sourceTree = "<group>"; };
+		7E7A9B7C20AD234C00E8CC9C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		7E7A9B7E20AD236100E8CC9C /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 		7EDD012A2089CA37000556A3 /* NYPlateJudge.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYPlateJudge.hpp; sourceTree = "<group>"; };
 		7EDD012B2089CA37000556A3 /* NYPlateJudge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYPlateJudge.cpp; sourceTree = "<group>"; };
 		7EDD012C2089CA37000556A3 /* NYPlateDetect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYPlateDetect.hpp; sourceTree = "<group>"; };
 		7EDD012D2089CA38000556A3 /* NYPlateDetect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYPlateDetect.cpp; sourceTree = "<group>"; };
 		7EDD01302089CA51000556A3 /* svm.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = svm.xml; sourceTree = "<group>"; };
-		7EDD014E208B0BE6000556A3 /* CNN_MODEL.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CNN_MODEL.md; sourceTree = "<group>"; };
 		7EDE3AAF20A08C230091AA50 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -732,9 +736,9 @@
 		7E71AE2C2089B1C000AA0CB2 = {
 			isa = PBXGroup;
 			children = (
+				7E7A9B7A20AD092600E8CC9C /* CNN_ZH63_MODEL.md */,
 				7E403B9E209BCFA50092799F /* ZHCNN_2MODEL.md */,
 				7E04A8652097DCB100217A65 /* ZHCNN_MODEL.md */,
-				7EDD014E208B0BE6000556A3 /* CNN_MODEL.md */,
 				7EDD01302089CA51000556A3 /* svm.xml */,
 				7E71AE502089B23A00AA0CB2 /* NYPR */,
 				7E71AE6A2089B23A00AA0CB2 /* OpenCVlibs */,
@@ -779,6 +783,8 @@
 				7E71AE482089B21700AA0CB2 /* PLR_Vision-Bridging-Header.h */,
 				7E6C2F6420A188C30091629D /* PlateCell.swift */,
 				7E6C2F6620A188EB0091629D /* PlateCell.xib */,
+				7E7A9B7C20AD234C00E8CC9C /* DetailView.swift */,
+				7E7A9B7E20AD236100E8CC9C /* DetailView.xib */,
 			);
 			path = PLR_Vision;
 			sourceTree = "<group>";
@@ -1435,11 +1441,13 @@
 				7E210CD2209D840700437453 /* 新.mp3 in Resources */,
 				7E210CB8209D840700437453 /* Z.mp3 in Resources */,
 				7E210CD3209D840700437453 /* 京.mp3 in Resources */,
+				7E7A9B7B20AD092600E8CC9C /* CNN_ZH63_MODEL.md in Resources */,
 				7E71AFF32089B23B00AA0CB2 /* license.txt in Resources */,
 				7E71B0082089B27200AA0CB2 /* Main.storyboard in Resources */,
 				7E210CD8209D840700437453 /* 青.mp3 in Resources */,
 				7E210CC0209D840700437453 /* 鄂.mp3 in Resources */,
 				7E210CCC209D840700437453 /* 7.mp3 in Resources */,
+				7E7A9B7F20AD236100E8CC9C /* DetailView.xib in Resources */,
 				7E210CDA209D840700437453 /* 辽.mp3 in Resources */,
 				7E210CD1209D840700437453 /* 蒙.mp3 in Resources */,
 				7E210CC9209D840700437453 /* 8.mp3 in Resources */,
@@ -1467,7 +1475,6 @@
 				7E210CD6209D840700437453 /* L.mp3 in Resources */,
 				7E04A8B42098459E00217A65 /* char_0.jpg in Resources */,
 				7E210CE9209D840700437453 /* 晋.mp3 in Resources */,
-				7EDD014F208B0BE7000556A3 /* CNN_MODEL.md in Resources */,
 				7E403B9F209BCFA50092799F /* ZHCNN_2MODEL.md in Resources */,
 				7E210CDD209D840700437453 /* 鲁.mp3 in Resources */,
 				7E210CE7209D840700437453 /* C.mp3 in Resources */,
@@ -1541,6 +1548,7 @@
 				7E042225209F0FC400263F49 /* CacheQueue.cpp in Sources */,
 				7E71B0032089B26600AA0CB2 /* CustomCellView.swift in Sources */,
 				7E71AFBA2089B23B00AA0CB2 /* NYCharacterPartition.cpp in Sources */,
+				7E7A9B7D20AD234C00E8CC9C /* DetailView.swift in Sources */,
 				7E71B0072089B27200AA0CB2 /* LoadingWindowController.swift in Sources */,
 				7E6C2F6520A188C30091629D /* PlateCell.swift in Sources */,
 				7EDE3AB020A08C230091AA50 /* VideoViewController.swift in Sources */,

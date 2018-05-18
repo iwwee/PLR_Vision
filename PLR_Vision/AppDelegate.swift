@@ -11,11 +11,22 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
+    // 创建状态栏
+    let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+       
+        // 设置状态栏Item
+        if let button = statusItem.button {
+            button.image = NSImage(named: NSImage.Name("StatusBarButtonImage"))
+            button.action = #selector(showPopMenu(_:))
+        }
     }
-
+    
+    @objc func showPopMenu(_ sender: Any?) {
+        
+        
+    }
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }

@@ -26,10 +26,10 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xsi-8d-s0E">
-                    <rect key="frame" x="254" y="10" width="24" height="24"/>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kVA-xd-Pac">
+                    <rect key="frame" x="192" y="10" width="24" height="24"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="more_red" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Iv8-S8-fho">
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="more_red" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="veD-kJ-9gi">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>

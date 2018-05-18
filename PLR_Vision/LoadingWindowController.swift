@@ -21,7 +21,7 @@ class LoadingWindowController: NSWindowController {
             window.center()
         }
         
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+2) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+4) {
             // storyboard加载视图控制器
             let mainWindow = self.storyboard!.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "MainViewController")) as! WindowController
             

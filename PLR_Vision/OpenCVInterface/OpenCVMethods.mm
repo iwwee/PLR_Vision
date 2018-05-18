@@ -161,7 +161,13 @@ NYAutoRecognize recognizer;
                     for (int j = 0; j < allchars.size(); j++) {
                         NSMutableDictionary *tempDict = [[NSMutableDictionary alloc] init];
                         NSString *tempStr = [NSString stringWithUTF8String: allchars[j].getCharacterStr().c_str()];
+                        
+                        // key : value, 字符 : 相似度
                         tempDict[tempStr] = [NSNumber numberWithFloat:allchars[j].getLikelyScore()];
+                        
+                        // key : value, image : 字符图像
+                        tempDict[@"charImg"] = [NSImage imageWithCVMat:allchars[j].getCharacterMat()];
+                        
                         [arry addObject:tempDict];
                     }
                 }

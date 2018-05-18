@@ -22,18 +22,19 @@ vector<NYPlate> NYPlateDetect::detectPlates(Mat src)
     color_plates = locater.plateLocateWithColor(src);
     color_plates = judge.judgePlates(color_plates);
     platesVec.insert(platesVec.end(), color_plates.begin(), color_plates.end());
-    cout << "color plates size :  " << color_plates.size() << endl;
+//    cout << "color plates size :  " << color_plates.size() << endl;
     
     // sobel定位
     sobel_plates = locater.plateLocateWithSobel(src);
     sobel_plates = judge.judgePlates(sobel_plates);
     reProcessPlates(src, sobel_plates);
-    cout << "sobel plates size : " << sobel_plates.size() << endl;
+    
+//    cout << "sobel plates size : " << sobel_plates.size() << endl;
     platesVec.insert(platesVec.end(), sobel_plates.begin(),sobel_plates.end());
     
     // 去除重复的车牌，去除sobel与color的交集
     platesVec = deleteRepeatPlates(color_plates, sobel_plates);
-    cout << "total plates size : " << platesVec.size() << endl;
+//    cout << "total plates size : " << platesVec.size() << endl;
     
     // 设置车牌颜色
     for (int i = 0; i < platesVec.size(); i++) {

@@ -9,8 +9,8 @@
 import Cocoa
 
 class PlateCell: NSTableCellView {
-    @IBOutlet weak var iconImageView: NSImageView!
     
+    @IBOutlet weak var iconImageView: NSImageView!
     @IBOutlet weak var textLabel: NSTextField!
     
     override func draw(_ dirtyRect: NSRect) {
@@ -28,4 +28,6 @@ class PlateCell: NSTableCellView {
         
         textLabel.stringValue = license
     }
+    
+   
 }

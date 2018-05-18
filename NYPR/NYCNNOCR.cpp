@@ -10,11 +10,11 @@
 
 void NYCNNOCR::loadCNNModel()
 {
-    net.load("/Users/NathanYu/Documents/Project/NYPlateRecognition/CNN_MODEL.md");
+    net.load("/Users/NathanYu/Desktop/PLR_Vision/PLR_Vision/CNN_CHAR_MODEL.md");
     
 //    zhNet.load("/Users/NathanYu/Desktop/PLR_Vision/PLR_Vision/ZHCNN_MODEL.md");
     
-    zhNet.load("/Users/NathanYu/Desktop/PLR_Vision/PLR_Vision/ZHCNN_2MODEL.md");
+    zhNet.load("/Users/NathanYu/Desktop/PLR_Vision/PLR_Vision/CNN_ZH63_MODEL.md");
     
 }
 

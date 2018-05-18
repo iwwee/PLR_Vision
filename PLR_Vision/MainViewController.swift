@@ -502,6 +502,8 @@ extension MainViewController {
                 if let image = NSImage(byReferencingFile: path) {
                     
                     let infoDict = firstArray[i] as! NSMutableDictionary
+                    
+                    
                     let predict = (infoDict.allKeys[0] as! NSString) as String
                     let pre_sim = (infoDict[predict] as! Float) * 100;
                     

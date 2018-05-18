@@ -91,7 +91,7 @@ extension VideoViewController: NSTableViewDelegate {
 // MARK: - tableView dataSource
 extension VideoViewController: NSTableViewDataSource {
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return (platesInfoArray == nil) ? 1 : platesInfoArray!.count
+        return (platesInfoArray == nil) ? 0 : platesInfoArray!.count
     }
 }
 
@@ -111,7 +111,12 @@ extension VideoViewController: CustomBtnProtocal {
 extension VideoViewController {
     
     
+    // 转到识别详情页面
     @objc func cellClicked() {
+        
+        print("cell \(platesInfoList.selectedRow) clicked! ")
+        
+        print("cell frame: \(platesInfoList.frameOfCell(atColumn: 0, row: platesInfoList.selectedRow))")
         
     }
     
