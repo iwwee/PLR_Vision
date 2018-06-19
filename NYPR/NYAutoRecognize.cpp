@@ -14,6 +14,16 @@ using namespace Utils;
 
 #define MAXIMAGESIZE 1000
 
+// 停止视频处理
+void NYAutoRecognize::stopAnalysing()
+{
+    isAnalysing = false;
+    
+    // 清空缓存区
+    CacheQueue *queue = CacheQueue::getInstance();
+    queue -> clearCacheQueue();
+}
+
 
 // 视频流处理
 void NYAutoRecognize::analyseVideo(std::string videoPath)
@@ -33,7 +43,11 @@ void NYAutoRecognize::analyseVideo(std::string videoPath)
     
     Ptr<BackgroundSubtractorMOG2> bgsubtrator = createBackgroundSubtractorMOG2(20, 16, false);
    
-    while (true) {
+    int frameFlag = 0;
+    
+    while (isAnalysing) {
+        
+        
         Mat frame, srcImage, result;
         Mat mask;
         if (!capture.read(frame)) {
@@ -81,10 +95,13 @@ void NYAutoRecognize::analyseVideo(std::string videoPath)
         // 添加渲染帧到缓存区
         frameQueue->addFrameToQueue(result);
         
+        if (frameFlag % 2 == 0) {
+            Mat below = frame(Rect(5, frame.rows * 4/5, frame.cols - 10, frame.rows * 1/5 - 5));
+            vector<NYPlate> plates = recognizeVideoPlate(below);
+            frameQueue->addPlatesToCache(plates);
+        }
         
-        Mat below = frame(Rect(5, frame.rows * 4/5, frame.cols - 10, frame.rows * 1/5 - 5));
-        vector<NYPlate> plates = recognizeVideoPlate(below);
-        frameQueue->addPlatesToCache(plates);
+        frameFlag++;
     }
 }
 

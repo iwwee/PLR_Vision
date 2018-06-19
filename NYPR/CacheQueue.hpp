@@ -32,6 +32,8 @@ public:
     void addCarPicToCache(Mat src);
     Mat getCarFromQueue();
     
+    // 清空缓存区
+    bool clearCacheQueue();
     
 private:
     CacheQueue() {}

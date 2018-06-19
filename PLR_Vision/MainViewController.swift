@@ -55,24 +55,27 @@ class MainViewController: NSViewController {
     var plateCounts: Int!
     var platesDict: NSMutableDictionary?
     
+    // 车牌识别结果模型
+    var plateInfoModels: [PlateInfoModel]?
+    
     var videoPath: String?
     var timer: Timer?
     var finished = false
     var isVideoMode = false
     
+    // 懒加载
     lazy var videoViewController: VideoViewController = {
-        // storyboard加载视图控制器
+        // 从storyboard加载视图控制器
         let vc = self.storyboard!.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "VideoViewController")) as! VideoViewController
         return vc
     }()
     
-    // MARK: -
-        
+    // MARK: - view lifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 设置UI
         setupUI()
-                
     }
     
     
@@ -147,226 +150,20 @@ class MainViewController: NSViewController {
         // 显示识别出的车牌个数
         let newVal = self.currentIndex + 1
         self.currentIndex = newVal
-        if self.currentIndex == self.plateCounts {
-            self.nextButton.isEnabled = false
-        }
-        self.preButton.isEnabled = true
-        self.platesNumber.stringValue = "\(newVal)/\(self.plateCounts!)"
         
-        // 显示下个识别车牌号
-        if let dict = platesDict {
-            let licenseArray = dict["license"] as! NSMutableArray
-            self.plateLicense.stringValue = (licenseArray[newVal - 1] as! NSString) as String
-            
-            // 播放下一个识别出的车牌号
-            DispatchQueue.global().async {
-                self.playPlateSound(license: licenseArray[newVal - 1] as! NSString)
-            }
-            
-            // 显示下个车牌颜色
-            let colorArray = dict["color"] as! NSMutableArray
-            self.plateColor.stringValue = (colorArray[newVal - 1] as! NSString) as String
-            
-            // 显示下个车牌分割图片
-            if let image = NSImage(byReferencingFile: "/Users/NathanYu/Desktop/PLR_Vision/PLR_Vision/resources/plate\(newVal - 1).jpg") {
-                self.plateImageView.image = image
-            }
-            
-            // 显示下个车牌中字符识别结果及相似度
-            let dictArry = dict["detail"] as! NSMutableArray
-            let firstArray = dictArry[newVal - 1] as! NSMutableArray
-            for i in 0...6 {
-                let path = "/Users/NathanYu/Desktop/PLR_Vision/PLR_Vision/resources/\(newVal - 1)char_\(i).jpg"
-                if let image = NSImage(byReferencingFile: path) {
-                    
-                    let infoDict = firstArray[i] as! NSMutableDictionary
-                    let predict = (infoDict.allKeys[0] as! NSString) as String
-                    let pre_sim = (infoDict[predict] as! Float) * 100;
-                    
-                    switch i {
-                    case 0:
-                        self.char1.image = image
-                        self.resChar1.stringValue = predict
-                        
-                        if pre_sim >= 99.995 {
-                            self.similarity1.stringValue = "100%"
-                        } else {
-                            self.similarity1.stringValue = String(format: "%.2f%%", pre_sim)
-                        }
-                        
-                    case 1:
-                        self.char2.image = image
-                        self.resChar2.stringValue = predict
-                        if pre_sim >= 99.995 {
-                            self.similarity2.stringValue = "100%"
-                        } else {
-                            self.similarity2.stringValue = String(format: "%.2f%%", pre_sim)
-                        }
-                    case 2:
-                        self.char3.image = image
-                        self.resChar3.stringValue = predict
-                        if pre_sim >= 99.995 {
-                            self.similarity3.stringValue = "100%"
-                        } else {
-                            self.similarity3.stringValue = String(format: "%.2f%%", pre_sim)
-                        }
-                    case 3:
-                        self.char4.image = image
-                        self.resChar4.stringValue = predict
-                        if pre_sim >= 99.995 {
-                            self.similarity4.stringValue = "100%"
-                        } else {
-                            self.similarity4.stringValue = String(format: "%.2f%%", pre_sim)
-                        }
-                    case 4:
-                        self.char5.image = image
-                        self.resChar5.stringValue = predict
-                        if pre_sim >= 99.995 {
-                            self.similarity5.stringValue = "100%"
-                        } else {
-                            self.similarity5.stringValue = String(format: "%.2f%%", pre_sim)
-                        }
-                    case 5:
-                        self.char6.image = image
-                        self.resChar6.stringValue = predict
-                        if pre_sim >= 99.995 {
-                            self.similarity6.stringValue = "100%"
-                        } else {
-                            self.similarity6.stringValue = String(format: "%.2f%%", pre_sim)
-                        }
-                    case 6:
-                        self.char7.image = image
-                        self.resChar7.stringValue = predict
-                        if pre_sim >= 99.995 {
-                            self.similarity7.stringValue = "100%"
-                        } else {
-                            self.similarity7.stringValue = String(format: "%.2f%%", pre_sim)
-                        }
-                    default:
-                        break;
-                    }
-                }
-            }
-            
-            self.mainButton.state = .select
-            self.plateLabel.stringValue = ""
-        }
-        
-        
+        updateCharsInfoView(plateInfo: plateInfoModels![newVal - 1], index: newVal, total: self.plateInfoModels!.count)
     }
     
     // 显示上一个车牌信息
     @IBAction func preButtonPressed(_ sender: NSButton) {
         
-        // 显示识别出的车牌个数
+        
         let newVal = self.currentIndex - 1
         self.currentIndex = newVal
-        if self.currentIndex == 1 {
-            self.preButton.isEnabled = false
-        }
-        self.nextButton.isEnabled = true
-        self.platesNumber.stringValue = "\(newVal)/\(self.plateCounts!)"
         
-        // 显示上一个识别车牌号
-        if let dict = platesDict {
-            let licenseArray = dict["license"] as! NSMutableArray
-            self.plateLicense.stringValue = (licenseArray[newVal - 1] as! NSString) as String
-            
-            // 播放上一个识别出的车牌号
-            DispatchQueue.global().async {
-                self.playPlateSound(license: licenseArray[newVal - 1] as! NSString)
-            }
-            
-            // 显示上一个车牌颜色
-            let colorArray = dict["color"] as! NSMutableArray
-            self.plateColor.stringValue = (colorArray[newVal - 1] as! NSString) as String
-            
-            // 显示上一个车牌分割图片
-            if let image = NSImage(byReferencingFile: "/Users/NathanYu/Desktop/PLR_Vision/PLR_Vision/resources/plate\(newVal - 1).jpg") {
-                self.plateImageView.image = image
-            }
-            
-            // 显示上一个车牌中字符识别结果及相似度
-            let dictArry = dict["detail"] as! NSMutableArray
-            let firstArray = dictArry[newVal - 1] as! NSMutableArray
-            for i in 0...6 {
-                let path = "/Users/NathanYu/Desktop/PLR_Vision/PLR_Vision/resources/\(newVal - 1)char_\(i).jpg"
-                if let image = NSImage(byReferencingFile: path) {
-                    
-                    let infoDict = firstArray[i] as! NSMutableDictionary
-                    let predict = (infoDict.allKeys[0] as! NSString) as String
-                    let pre_sim = (infoDict[predict] as! Float) * 100;
-                    
-                    switch i {
-                    case 0:
-                        self.char1.image = image
-                        self.resChar1.stringValue = predict
-                        
-                        if pre_sim >= 99.995 {
-                            self.similarity1.stringValue = "100%"
-                        } else {
-                            self.similarity1.stringValue = String(format: "%.2f%%", pre_sim)
-                        }
-                        
-                    case 1:
-                        self.char2.image = image
-                        self.resChar2.stringValue = predict
-                        if pre_sim >= 99.995 {
-                            self.similarity2.stringValue = "100%"
-                        } else {
-                            self.similarity2.stringValue = String(format: "%.2f%%", pre_sim)
-                        }
-                    case 2:
-                        self.char3.image = image
-                        self.resChar3.stringValue = predict
-                        if pre_sim >= 99.995 {
-                            self.similarity3.stringValue = "100%"
-                        } else {
-                            self.similarity3.stringValue = String(format: "%.2f%%", pre_sim)
-                        }
-                    case 3:
-                        self.char4.image = image
-                        self.resChar4.stringValue = predict
-                        if pre_sim >= 99.995 {
-                            self.similarity4.stringValue = "100%"
-                        } else {
-                            self.similarity4.stringValue = String(format: "%.2f%%", pre_sim)
-                        }
-                    case 4:
-                        self.char5.image = image
-                        self.resChar5.stringValue = predict
-                        if pre_sim >= 99.995 {
-                            self.similarity5.stringValue = "100%"
-                        } else {
-                            self.similarity5.stringValue = String(format: "%.2f%%", pre_sim)
-                        }
-                    case 5:
-                        self.char6.image = image
-                        self.resChar6.stringValue = predict
-                        if pre_sim >= 99.995 {
-                            self.similarity6.stringValue = "100%"
-                        } else {
-                            self.similarity6.stringValue = String(format: "%.2f%%", pre_sim)
-                        }
-                    case 6:
-                        self.char7.image = image
-                        self.resChar7.stringValue = predict
-                        if pre_sim >= 99.995 {
-                            self.similarity7.stringValue = "100%"
-                        } else {
-                            self.similarity7.stringValue = String(format: "%.2f%%", pre_sim)
-                        }
-                    default:
-                        break;
-                    }
-                }
-            }
-            
-            self.mainButton.state = .select
-            self.plateLabel.stringValue = ""
-        }
-        
-        
+        // 更新页面内容
+        updateCharsInfoView(plateInfo: plateInfoModels![newVal - 1], index: newVal, total: self.plateInfoModels!.count)
+
     }
     
     @objc func cellClicked() {
@@ -379,8 +176,47 @@ class MainViewController: NSViewController {
             
         } else if tableView.selectedRow == 0 && isVideoMode == true {   // 图片识别
             
-            self.videoViewController.view.removeFromSuperview()
-            isVideoMode = false
+            // 当前是否有视频正在处理
+            if self.videoViewController.isPlaying == true {
+                
+                let alert = NSAlert()
+                alert.alertStyle = .warning
+                alert.icon = NSImage(named: NSImage.Name(rawValue: "AppIcon"))
+                alert.addButton(withTitle: "退出")
+                alert.addButton(withTitle: "继续检测")
+                alert.messageText = "你想在完成检测前退出吗?"
+                alert.informativeText = "停止会中断当前检测过程，导致检测结果不完整"
+                alert.beginSheetModal(for: NSApplication.shared.keyWindow!) { (modalResponse) in
+                    
+                    if modalResponse == NSApplication.ModalResponse.alertFirstButtonReturn {
+                        print("退出")
+                        
+                        if self.videoViewController.isPlaying == true {
+                            ImageConverter.stopAndQuit()
+                            
+                            self.videoViewController.isPlaying = false
+                            self.videoViewController.resetToDefaultState()
+                            self.videoViewController.view.removeFromSuperview()
+                            self.isVideoMode = false
+                            
+                        }
+                        
+                    } else if modalResponse == NSApplication.ModalResponse.alertSecondButtonReturn {
+                        // 继续检测, 更改选中行为视频检测
+                        let indexSet = IndexSet(integer: 1)
+                        self.tableView.selectRowIndexes(indexSet, byExtendingSelection: false)
+                        
+                    } else {
+                        print("其他按钮")
+                    }
+                }
+            } else {
+                // 重设为初始状态
+                self.videoViewController.resetToDefaultState()
+                
+                self.videoViewController.view.removeFromSuperview()
+                self.isVideoMode = false
+            }
         }
     }
 }
@@ -436,6 +272,55 @@ extension MainViewController: NSTableViewDelegate {
 // MARK: - custom func
 extension MainViewController {
     
+    
+    // 更新识别页面内容, index为当前模型在数组中的位置
+    func updateCharsInfoView(plateInfo: PlateInfoModel, index: Int, total: Int) {
+        // 显示识别结果页面
+        self.resultView.alphaValue = 1
+        
+        // 后台播放识别出的车牌号
+        DispatchQueue.global().async {
+            self.playPlateSound(license: NSString(string: plateInfo.plateLicense))
+        }
+        
+        // 车牌图像
+        self.plateImageView.image = plateInfo.plateImage
+        
+        // 车牌号
+        self.plateLicense.stringValue = plateInfo.plateLicense
+        
+        // 车牌颜色
+        self.plateColor.stringValue = plateInfo.plateColor
+        
+        // 操作按钮与当前车牌索引
+        if index == -1 {    // 只有一个车牌
+            self.preButton.isHidden = true
+            self.nextButton.isHidden = true
+            self.platesNumber.stringValue = "1"
+        } else {    // 多个车牌
+            self.preButton.isHidden = false
+            self.nextButton.isHidden = false
+            
+            self.preButton.isEnabled = (index == 1) ? false : true
+            self.nextButton.isEnabled = (index == total) ? false : true
+            self.platesNumber.stringValue = "\(index)/\(total)"
+        }
+        
+        // 字符详情, 根据tag值获取控件
+        let charInfoArray = plateInfo.charsArray!
+        for i in 1...7 {    
+            let baseTag = i * 10000
+            
+            let charImageView = self.resultView.viewWithTag(baseTag + 1) as! NSImageView
+            let charValue = self.resultView.viewWithTag(baseTag + 2) as! NSTextField
+            let charSim = self.resultView.viewWithTag(baseTag + 3) as! NSTextField
+            
+            charImageView.image = charInfoArray[i - 1].charImage
+            charValue.stringValue = charInfoArray[i - 1].charValue
+            charSim.stringValue = charInfoArray[i - 1].charSim
+        }
+    }
+    
     // 识别后更改界面
     func reLayoutUI(dict: NSMutableDictionary) {
         NSAnimationContext.runAnimationGroup({ (context) in
@@ -447,7 +332,6 @@ extension MainViewController {
             self.carImageView.frame.size.width = 570
             self.carImageView.frame.size.height = 420
             
-            
             // 更换绘制过的图片
             if let image = NSImage(byReferencingFile: "/Users/NathanYu/Desktop/PLR_Vision/PLR_Vision/resources/drawcar.jpg") {
                 self.carImageView.image = image
@@ -455,123 +339,18 @@ extension MainViewController {
                 print("can't load drawed image!")
             }
             
+            // 识别信息 字典转模型
+            let dictModels = PlateInfoModel.getModels(dict: dict)
+            self.plateInfoModels = dictModels
             
-            self.resultView.alphaValue = 1
+            // 先展示首个车牌信息
+            let index = (dictModels.count == 1) ? -1 : 1
+            self.updateCharsInfoView(plateInfo: dictModels[0], index: index, total: dictModels.count)
             
-            // 显示识别出的车牌个数
-            let num = dict["number"] as! Int
-            if num == 1 {
-                self.preButton.isHidden = true
-                self.nextButton.isHidden = true
-                self.platesNumber.stringValue = "\(num)"
-            } else {
-                self.preButton.isHidden = false
-                self.nextButton.isHidden = false
-                self.preButton.isEnabled = false
-                self.nextButton.isEnabled = true
-                self.platesNumber.stringValue = "1/\(num)"
-            }
-            
+            //  记录当前展示车牌位置
             self.currentIndex = 1
-            self.plateCounts = num
-            self.platesDict = dict
             
-            // 显示首个识别车牌号
-            let licenseArray = dict["license"] as! NSMutableArray
-            self.plateLicense.stringValue = (licenseArray[0] as! NSString) as String
-            
-            // 后台播放首个识别出的车牌号
-            DispatchQueue.global().async {
-                self.playPlateSound(license: licenseArray[0] as! NSString)
-            }
-            
-            // 显示首个车牌颜色
-            let colorArray = dict["color"] as! NSMutableArray
-            self.plateColor.stringValue = (colorArray[0] as! NSString) as String
-            
-            // 显示首个车牌分割图片
-            if let image = NSImage(byReferencingFile: "/Users/NathanYu/Desktop/PLR_Vision/PLR_Vision/resources/plate0.jpg") {
-                self.plateImageView.image = image
-            }
-            
-            // 显示首个车牌中字符识别结果及相似度
-            let dictArry = dict["detail"] as! NSMutableArray
-            let firstArray = dictArry[0] as! NSMutableArray
-            for i in 0...6 {
-                let path = "/Users/NathanYu/Desktop/PLR_Vision/PLR_Vision/resources/0char_\(i).jpg"
-                if let image = NSImage(byReferencingFile: path) {
-                    
-                    let infoDict = firstArray[i] as! NSMutableDictionary
-                    
-                    
-                    let predict = (infoDict.allKeys[0] as! NSString) as String
-                    let pre_sim = (infoDict[predict] as! Float) * 100;
-                    
-                    switch i {
-                    case 0:
-                        self.char1.image = image
-                        self.resChar1.stringValue = predict
-                        
-                        if pre_sim >= 99.995 {
-                            self.similarity1.stringValue = "100%"
-                        } else {
-                            self.similarity1.stringValue = String(format: "%.2f%%", pre_sim)
-                        }
-                        
-                    case 1:
-                        self.char2.image = image
-                        self.resChar2.stringValue = predict
-                        if pre_sim >= 99.995 {
-                            self.similarity2.stringValue = "100%"
-                        } else {
-                            self.similarity2.stringValue = String(format: "%.2f%%", pre_sim)
-                        }
-                    case 2:
-                        self.char3.image = image
-                        self.resChar3.stringValue = predict
-                        if pre_sim >= 99.995 {
-                            self.similarity3.stringValue = "100%"
-                        } else {
-                            self.similarity3.stringValue = String(format: "%.2f%%", pre_sim)
-                        }
-                    case 3:
-                        self.char4.image = image
-                        self.resChar4.stringValue = predict
-                        if pre_sim >= 99.995 {
-                            self.similarity4.stringValue = "100%"
-                        } else {
-                            self.similarity4.stringValue = String(format: "%.2f%%", pre_sim)
-                        }
-                    case 4:
-                        self.char5.image = image
-                        self.resChar5.stringValue = predict
-                        if pre_sim >= 99.995 {
-                            self.similarity5.stringValue = "100%"
-                        } else {
-                            self.similarity5.stringValue = String(format: "%.2f%%", pre_sim)
-                        }
-                    case 5:
-                        self.char6.image = image
-                        self.resChar6.stringValue = predict
-                        if pre_sim >= 99.995 {
-                            self.similarity6.stringValue = "100%"
-                        } else {
-                            self.similarity6.stringValue = String(format: "%.2f%%", pre_sim)
-                        }
-                    case 6:
-                        self.char7.image = image
-                        self.resChar7.stringValue = predict
-                        if pre_sim >= 99.995 {
-                            self.similarity7.stringValue = "100%"
-                        } else {
-                            self.similarity7.stringValue = String(format: "%.2f%%", pre_sim)
-                        }
-                    default:
-                        break;
-                    }
-                }
-            }
-            
+            // 更改主按钮状态为选择
             self.mainButton.state = .select
             self.plateLabel.stringValue = ""
         })
@@ -646,8 +425,7 @@ extension MainViewController {
                     // 重新布局UI
                     self.reLayoutUI(dict: dict)
                 }
-
-            } else {
+            } else {    // 未识别出车牌时返回字典为空
                 
                 // 主线程更新UI
                 DispatchQueue.main.async {
@@ -702,6 +480,9 @@ extension MainViewController {
         // 更改为正在播放图标
         DispatchQueue.main.async {
             self.audioButton.image = NSImage(named: NSImage.Name(rawValue: "audio_on"))
+            
+            // 播放时不再可交互
+            self.audioButton.refusesFirstResponder = true
         }
         
         for i in 0...6 {
@@ -727,6 +508,9 @@ extension MainViewController {
         /// 更改为未播放图标
         DispatchQueue.main.async {
             self.audioButton.image = NSImage(named: NSImage.Name(rawValue: "audio_off"))
+            
+            // 播放完毕可再交互
+            self.audioButton.refusesFirstResponder = false
         }
     }
     

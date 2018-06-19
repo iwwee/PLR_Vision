@@ -99,7 +99,26 @@ Mat CacheQueue::getCarFromQueue()
     return out;
 }
 
-
+// 清空缓存区
+bool CacheQueue::clearCacheQueue()
+{
+    
+    // 清空帧缓存
+    while (!frameQueue.empty()) {
+        frameQueue.pop();
+    }
+    
+    // 清空车辆Mat缓存
+    while (!carCache.empty()) {
+        carCache.pop();
+    }
+    
+    // 清空识别车牌信息缓存
+    platesCache.clear();
+    
+    
+    return true;
+}
 
 
 

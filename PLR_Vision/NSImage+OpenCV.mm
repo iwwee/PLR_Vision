@@ -87,7 +87,9 @@
 - (id)initWithCVMat:(const cv::Mat&)cvMat
 {
     // BGR先转换为RGB
-    cv::cvtColor(cvMat, cvMat, CV_BGR2RGB);
+    if (cvMat.channels() > 1) {
+        cv::cvtColor(cvMat, cvMat, CV_BGR2RGB);
+    }
     NSData *data = [NSData dataWithBytes:cvMat.data length:cvMat.elemSize() * cvMat.total()];
     
     CGColorSpaceRef colorSpace;

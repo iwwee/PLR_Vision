@@ -36,7 +36,11 @@ public:
     
     vector<NYPlate> recognizeVideoPlate(Mat &src);
     
+    // 分析视频流
     void analyseVideo(string videoPath);
+    
+    // 停止视频处理
+    void stopAnalysing();
     
     // 批处理所有车牌
     void handleAllCars();

@@ -87,6 +87,9 @@
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="voiceButtonPressed:" target="c22-O7-iKe" id="7xV-XD-5K8"/>
+                    </connections>
                 </button>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" tag="7001" translatesAutoresizingMaskIntoConstraints="NO" id="AJZ-QC-7XS" userLabel="char7View">
                     <rect key="frame" x="30" y="22" width="16" height="16"/>
@@ -276,39 +279,51 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XOn-Nl-ZZT">
+                    <rect key="frame" x="5" y="455" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="back-arrow" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="mXd-yo-IOp">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="backButtonPressed:" target="c22-O7-iKe" id="Qh0-cE-Lcm"/>
+                    </connections>
+                </button>
             </subviews>
             <connections>
-                <outlet property="charImage1" destination="Y9K-aL-Css" id="hCc-tC-O2a"/>
-                <outlet property="charImage2" destination="0s1-iS-KXT" id="cId-xD-p5E"/>
-                <outlet property="charImage3" destination="Kxs-jQ-voZ" id="bRj-YA-igt"/>
-                <outlet property="charImage4" destination="dco-9X-Qe2" id="KZB-HK-EE6"/>
-                <outlet property="charImage5" destination="jna-cI-lyt" id="6cZ-pa-Ehw"/>
-                <outlet property="charImage6" destination="Mux-i2-pXr" id="9uo-fY-ah3"/>
-                <outlet property="charImage7" destination="AJZ-QC-7XS" id="lv3-Rr-Wxn"/>
-                <outlet property="charValue1" destination="AtD-EW-uZ3" id="QHG-31-4TI"/>
-                <outlet property="charValue2" destination="zUU-nF-Vne" id="sTh-v0-cht"/>
-                <outlet property="charValue3" destination="Iit-4g-mNp" id="rb7-72-wwy"/>
-                <outlet property="charValue4" destination="sMt-tW-StH" id="cvo-Fc-ouM"/>
-                <outlet property="charValue5" destination="2yD-6W-cIW" id="6LT-LZ-3IG"/>
-                <outlet property="charValue6" destination="Cxg-N1-QFp" id="BeA-GL-hvm"/>
-                <outlet property="charValue7" destination="VtK-G2-m8m" id="yyY-Ov-Bfy"/>
-                <outlet property="licenseColorLabel" destination="q1N-JK-EaH" id="LH9-Uk-wri"/>
-                <outlet property="licenseLabel" destination="md9-1V-xE8" id="ZFo-t2-c3r"/>
-                <outlet property="plateImageView" destination="TRh-aC-ltf" id="hrN-iU-XUH"/>
-                <outlet property="sim1" destination="Oap-64-tPb" id="PHo-oX-bf8"/>
-                <outlet property="sim2" destination="S41-2e-ZaZ" id="X9q-Tu-6fd"/>
-                <outlet property="sim3" destination="seB-lY-9cc" id="yXI-1w-JlX"/>
-                <outlet property="sim4" destination="aVd-kZ-8zw" id="Ft8-xf-Zi5"/>
-                <outlet property="sim5" destination="3ym-cJ-Wrl" id="zfP-9d-d7I"/>
-                <outlet property="sim6" destination="2xr-Ux-5hT" id="SyU-1O-MN8"/>
-                <outlet property="sim7" destination="JNT-El-4sS" id="e2S-8L-ADL"/>
-                <outlet property="voiceButton" destination="9zj-dt-SL3" id="cL8-SZ-Bfq"/>
+                <outlet property="charImage1" destination="Y9K-aL-Css" id="1xI-hM-a8I"/>
+                <outlet property="charImage2" destination="0s1-iS-KXT" id="ii1-cA-OTR"/>
+                <outlet property="charImage3" destination="Kxs-jQ-voZ" id="8Aa-wQ-Dm3"/>
+                <outlet property="charImage4" destination="dco-9X-Qe2" id="xrZ-2I-BwM"/>
+                <outlet property="charImage5" destination="jna-cI-lyt" id="RnO-O5-c93"/>
+                <outlet property="charImage6" destination="Mux-i2-pXr" id="9aK-MR-WDm"/>
+                <outlet property="charImage7" destination="AJZ-QC-7XS" id="R9G-RV-ZaH"/>
+                <outlet property="charValue1" destination="AtD-EW-uZ3" id="PbU-vl-tbc"/>
+                <outlet property="charValue2" destination="zUU-nF-Vne" id="cK9-1e-mZO"/>
+                <outlet property="charValue3" destination="Iit-4g-mNp" id="krC-bw-QcP"/>
+                <outlet property="charValue4" destination="sMt-tW-StH" id="OSR-qf-r0l"/>
+                <outlet property="charValue5" destination="2yD-6W-cIW" id="reM-5p-PQ8"/>
+                <outlet property="charValue6" destination="Cxg-N1-QFp" id="ulW-Lo-AB4"/>
+                <outlet property="charValue7" destination="VtK-G2-m8m" id="J2R-pv-8rJ"/>
+                <outlet property="licenseColorLabel" destination="q1N-JK-EaH" id="S7H-MO-rPy"/>
+                <outlet property="licenseLabel" destination="md9-1V-xE8" id="iCF-Xr-Q4p"/>
+                <outlet property="plateImageView" destination="TRh-aC-ltf" id="O8g-mO-4FS"/>
+                <outlet property="sim1" destination="Oap-64-tPb" id="e30-6o-d1j"/>
+                <outlet property="sim2" destination="S41-2e-ZaZ" id="5GE-dn-WfS"/>
+                <outlet property="sim3" destination="seB-lY-9cc" id="swS-K0-tIi"/>
+                <outlet property="sim4" destination="aVd-kZ-8zw" id="Qgv-AV-5mN"/>
+                <outlet property="sim5" destination="3ym-cJ-Wrl" id="LAk-4B-h3K"/>
+                <outlet property="sim6" destination="2xr-Ux-5hT" id="zmd-Wc-JhP"/>
+                <outlet property="sim7" destination="JNT-El-4sS" id="hA7-US-1Rz"/>
+                <outlet property="voiceButton" destination="9zj-dt-SL3" id="PHr-FA-Mv4"/>
             </connections>
-            <point key="canvasLocation" x="0.5" y="226.5"/>
+            <point key="canvasLocation" x="-234.5" y="131.5"/>
         </customView>
     </objects>
     <resources>
         <image name="audio_off" width="25.600000381469727" height="25.600000381469727"/>
+        <image name="back-arrow" width="25.600000381469727" height="25.600000381469727"/>
         <image name="char_0" width="32" height="32"/>
         <image name="char_1" width="32" height="32"/>
         <image name="char_2" width="32" height="32"/>

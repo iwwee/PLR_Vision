@@ -49,6 +49,14 @@ NYAutoRecognize recognizer;
         }
         dict[@"license"] = allLicenses;
         
+        // 定位出的所有车牌图像
+        NSMutableArray *plateImages = [[NSMutableArray alloc] init];
+        for (int i = 0; i < plates.size(); i++) {
+            NSImage *tempImage = [NSImage imageWithCVMat:plates[i].getPlateMat()];
+            [plateImages addObject:tempImage];
+        }
+        dict[@"images"] = plateImages;
+        
         // 识别出的所有字符及相似度
         NSMutableArray *allLikelyArry = [[NSMutableArray alloc] init];
         for (int i = 0; i < plates.size(); i++) {
@@ -58,7 +66,15 @@ NYAutoRecognize recognizer;
                 for (int j = 0; j < allchars.size(); j++) {
                     NSMutableDictionary *tempDict = [[NSMutableDictionary alloc] init];
                     NSString *tempStr = [NSString stringWithUTF8String: allchars[j].getCharacterStr().c_str()];
-                    tempDict[tempStr] = [NSNumber numberWithFloat:allchars[j].getLikelyScore()];
+                    // 字符
+                    tempDict[@"char"] = tempStr;
+                    
+                    // 字符相似度
+                    tempDict[@"charSim"] = [NSNumber numberWithFloat:allchars[j].getLikelyScore()];
+                    
+                    // 字符图像
+                    tempDict[@"charImg"] = [NSImage imageWithCVMat:allchars[j].getCharacterMat()];
+                    
                     [arry addObject:tempDict];
                 }
             }
@@ -162,10 +178,13 @@ NYAutoRecognize recognizer;
                         NSMutableDictionary *tempDict = [[NSMutableDictionary alloc] init];
                         NSString *tempStr = [NSString stringWithUTF8String: allchars[j].getCharacterStr().c_str()];
                         
-                        // key : value, 字符 : 相似度
-                        tempDict[tempStr] = [NSNumber numberWithFloat:allchars[j].getLikelyScore()];
+                        // 字符
+                        tempDict[@"char"] = tempStr;
                         
-                        // key : value, image : 字符图像
+                        // 相似度
+                        tempDict[@"charSim"] = [NSNumber numberWithFloat:allchars[j].getLikelyScore()];
+                        
+                        // 字符图像
                         tempDict[@"charImg"] = [NSImage imageWithCVMat:allchars[j].getCharacterMat()];
                         
                         [arry addObject:tempDict];
@@ -183,6 +202,24 @@ NYAutoRecognize recognizer;
     }
     
     return infoDict;
+}
+
+// 停止视频处理并退出
++ (BOOL)stopAndQuit
+{
+    // 停止视频处理
+    recognizer.stopAnalysing();
+    
+    return YES;
+}
+
+// 清空识别的缓存数据
++ (BOOL)clearCacheData
+{
+    CacheQueue *cq = CacheQueue::getInstance();
+    cq -> clearCacheQueue();
+    
+    return YES;
 }
 
 

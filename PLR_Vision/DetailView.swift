@@ -8,7 +8,14 @@
 
 import Cocoa
 
+protocol DetailViewProtocal {
+    func backToMainView(_ detailView: DetailView)
+    func playPlateSound(_ detailView: DetailView, license: String, sender: NSButton)
+}
+
 class DetailView: NSView {
+    
+    var delegate: DetailViewProtocal?
     
     @IBOutlet weak var plateImageView: NSImageView!
     @IBOutlet weak var licenseLabel: NSTextField!
@@ -41,69 +48,72 @@ class DetailView: NSView {
     @IBOutlet weak var sim6: NSTextField!
     @IBOutlet weak var sim7: NSTextField!
     
+    var plateModel: PlateInfoModel?
+    
     
     // MARK: - func
-    
-    // 更新UI
-    func layoutUI(detailDict: NSMutableDictionary) {
-        
-        // 车牌图片
-        let image = detailDict["image"] as! NSImage
-        self.plateImageView.image = image
-        
-        // 车牌号
-        let license = detailDict["license"] as! String
-        self.licenseLabel.stringValue = license
-        
-        // 颜色
-        let color = detailDict["color"] as! String
-        self.licenseColorLabel.stringValue = color
-        
-        // 字符详情
-        let dict = detailDict["detail"] as! NSMutableArray
-        for i in 0...6 {
-
+    class func creatViewFromNib() -> DetailView? {
+        let nib = NSNib(nibNamed: NSNib.Name("DetailView"), bundle: nil)!
+        var topLevelObjects: NSArray?
+        var view: DetailView?
+        if nib.instantiate(withOwner: nil, topLevelObjects: &topLevelObjects) {
+            for topObject in topLevelObjects! {
+                if topObject is DetailView {
+                    view = topObject as? DetailView
+                    view?.wantsLayer = true
+                    view?.layer?.backgroundColor = NSColor(red: 44 / 255, green: 43  / 255, blue: 51 / 255, alpha: 1).cgColor
+                    break
+                }
+            }
         }
         
-        
-        
+        return view
     }
     
-    //
-    func updateCharInfo(charInfoDict: NSMutableDictionary, index: Int) {
+    // 更新UI
+    func layoutUI(plateModel: PlateInfoModel) {
+        self.plateModel = plateModel
         
-        let baseTag = index * 1000
+        // 车牌图片
+        self.plateImageView.image = plateModel.plateImage
         
-        // 根据tag值获取控件
-        let charImageView = self.viewWithTag(baseTag + 1) as! NSImageView
-        let charValue = self.viewWithTag(baseTag + 2) as! NSTextField
-        let charSim = self.viewWithTag(baseTag + 3) as! NSTextField
+        // 车牌号
+        self.licenseLabel.stringValue = plateModel.plateLicense
         
-        let predict = (charInfoDict.allKeys[0] as! NSString) as String
-        let similarity = (charInfoDict[predict] as! Float) * 100
+        // 颜色
+        self.licenseColorLabel.stringValue = plateModel.plateColor
         
-        charValue.stringValue = predict
-        charSim.stringValue = (similarity >= 99.995) ? "100%" : String(format: "%.2f%%", similarity)
+        // 字符详情
+        let charsInfo = plateModel.charsArray!
+        for i in 1...7 {
+            let baseTag = i * 1000
+            
+            // 根据tag值获取控件
+            let charImageView = self.viewWithTag(baseTag + 1) as! NSImageView
+            let charValue = self.viewWithTag(baseTag + 2) as! NSTextField
+            let charSim = self.viewWithTag(baseTag + 3) as! NSTextField
+            
+            charImageView.image = charsInfo[i - 1].charImage
+            charValue.stringValue = charsInfo[i - 1].charValue
+            charSim.stringValue = charsInfo[i - 1].charSim
+        }
+        
+        // 语音播报
+        self.delegate?.playPlateSound(self, license: plateModel.plateLicense, sender: self.voiceButton)
+    }
+
+    // 退出详情视图
+    @IBAction func backButtonPressed(_ sender: NSButton) {
+        self.delegate?.backToMainView(self)
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    // 语音播报车牌号
+    @IBAction func voiceButtonPressed(_ sender: NSButton) {
+        
+        let license = self.plateModel!.plateLicense
+        
+        self.delegate?.playPlateSound(self, license: license!, sender: sender)
+    }
     
     
     override func draw(_ dirtyRect: NSRect) {

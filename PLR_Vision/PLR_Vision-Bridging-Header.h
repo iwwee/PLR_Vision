@@ -15,4 +15,10 @@
 // OpenCV开始处理视频流
 +(BOOL)startAnalyseVideo: (NSString*)videoPath;
 
+// 停止视频处理并退出
++(BOOL)stopAndQuit;
+
+// 清除缓存数据
++(BOOL)clearCacheData;
+
 @end
