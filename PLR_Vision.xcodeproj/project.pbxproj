@@ -7,17 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E042225209F0FC400263F49 /* CacheQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E042223209F0FC400263F49 /* CacheQueue.cpp */; };
-		7E04A8662097DCB100217A65 /* ZHCNN_MODEL.md in Resources */ = {isa = PBXBuildFile; fileRef = 7E04A8652097DCB100217A65 /* ZHCNN_MODEL.md */; };
-		7E04A8AC2098459E00217A65 /* char_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E04A8A32098459D00217A65 /* char_1.jpg */; };
-		7E04A8AD2098459E00217A65 /* char_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E04A8A42098459D00217A65 /* char_3.jpg */; };
-		7E04A8AE2098459E00217A65 /* drawcar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E04A8A52098459D00217A65 /* drawcar.jpg */; };
-		7E04A8AF2098459E00217A65 /* plate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E04A8A62098459E00217A65 /* plate.jpg */; };
-		7E04A8B02098459E00217A65 /* char_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E04A8A72098459E00217A65 /* char_6.jpg */; };
-		7E04A8B12098459E00217A65 /* char_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E04A8A82098459E00217A65 /* char_2.jpg */; };
-		7E04A8B22098459E00217A65 /* char_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E04A8A92098459E00217A65 /* char_5.jpg */; };
-		7E04A8B32098459E00217A65 /* char_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E04A8AA2098459E00217A65 /* char_4.jpg */; };
-		7E04A8B42098459E00217A65 /* char_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E04A8AB2098459E00217A65 /* char_0.jpg */; };
 		7E210CAE209D840700437453 /* 豫.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E210C6D209D840100437453 /* 豫.mp3 */; };
 		7E210CAF209D840700437453 /* G.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E210C6E209D840100437453 /* G.mp3 */; };
 		7E210CB0209D840700437453 /* 冀.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E210C6F209D840100437453 /* 冀.mp3 */; };
@@ -83,19 +72,7 @@
 		7E210CEC209D840700437453 /* 闽.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E210CAB209D840700437453 /* 闽.mp3 */; };
 		7E210CED209D840700437453 /* K.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E210CAC209D840700437453 /* K.mp3 */; };
 		7E210CEE209D840700437453 /* 贵.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E210CAD209D840700437453 /* 贵.mp3 */; };
-		7E403B9F209BCFA50092799F /* ZHCNN_2MODEL.md in Resources */ = {isa = PBXBuildFile; fileRef = 7E403B9E209BCFA50092799F /* ZHCNN_2MODEL.md */; };
-		7E6C2F6520A188C30091629D /* PlateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C2F6420A188C30091629D /* PlateCell.swift */; };
-		7E6C2F6720A188EB0091629D /* PlateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E6C2F6620A188EB0091629D /* PlateCell.xib */; };
 		7E71AE3D2089B1C100AA0CB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E71AE3C2089B1C100AA0CB2 /* Assets.xcassets */; };
-		7E71AFBA2089B23B00AA0CB2 /* NYCharacterPartition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E71AE512089B23A00AA0CB2 /* NYCharacterPartition.cpp */; };
-		7E71AFBC2089B23B00AA0CB2 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E71AE542089B23A00AA0CB2 /* Utils.cpp */; };
-		7E71AFBE2089B23B00AA0CB2 /* NYCharacter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E71AE592089B23A00AA0CB2 /* NYCharacter.cpp */; };
-		7E71AFBF2089B23B00AA0CB2 /* NYAutoRecognize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E71AE5A2089B23A00AA0CB2 /* NYAutoRecognize.cpp */; };
-		7E71AFC02089B23B00AA0CB2 /* NYPlateLocate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E71AE5C2089B23A00AA0CB2 /* NYPlateLocate.cpp */; };
-		7E71AFC12089B23B00AA0CB2 /* NYCNNOCR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E71AE5D2089B23A00AA0CB2 /* NYCNNOCR.cpp */; };
-		7E71AFC22089B23B00AA0CB2 /* NYCharacterRecognition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E71AE5F2089B23A00AA0CB2 /* NYCharacterRecognition.cpp */; };
-		7E71AFC32089B23B00AA0CB2 /* NYPlate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E71AE612089B23A00AA0CB2 /* NYPlate.cpp */; };
-		7E71AFC42089B23B00AA0CB2 /* NYCharacterJudge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E71AE632089B23A00AA0CB2 /* NYCharacterJudge.cpp */; };
 		7E71AFC62089B23B00AA0CB2 /* scanFinished.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 7E71AE692089B23A00AA0CB2 /* scanFinished.aiff */; };
 		7E71AFC72089B23B00AA0CB2 /* libopencv_xphoto.3.4.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E71AE6B2089B23A00AA0CB2 /* libopencv_xphoto.3.4.0.dylib */; };
 		7E71AFC82089B23B00AA0CB2 /* libopencv_objdetect.3.4.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E71AE6C2089B23A00AA0CB2 /* libopencv_objdetect.3.4.0.dylib */; };
@@ -144,45 +121,44 @@
 		7E71AFF32089B23B00AA0CB2 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7E71AFA82089B23B00AA0CB2 /* license.txt */; };
 		7E71AFF42089B23B00AA0CB2 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7E71AFB62089B23B00AA0CB2 /* license.txt */; };
 		7E71AFF52089B23B00AA0CB2 /* manual.html in Resources */ = {isa = PBXBuildFile; fileRef = 7E71AFB72089B23B00AA0CB2 /* manual.html */; };
-		7E71AFFE2089B26600AA0CB2 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E71AFF62089B26600AA0CB2 /* CustomButton.swift */; };
-		7E71AFFF2089B26600AA0CB2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E71AFF82089B26600AA0CB2 /* MainViewController.swift */; };
-		7E71B0002089B26600AA0CB2 /* NSImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E71AFF92089B26600AA0CB2 /* NSImage+OpenCV.mm */; };
-		7E71B0012089B26600AA0CB2 /* AboutWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E71AFFA2089B26600AA0CB2 /* AboutWindowController.swift */; };
-		7E71B0022089B26600AA0CB2 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E71AFFB2089B26600AA0CB2 /* WindowController.swift */; };
-		7E71B0032089B26600AA0CB2 /* CustomCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E71AFFC2089B26600AA0CB2 /* CustomCellView.swift */; };
-		7E71B0042089B26600AA0CB2 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E71AFFD2089B26600AA0CB2 /* CustomCell.xib */; };
-		7E71B0072089B27200AA0CB2 /* LoadingWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E71B0052089B27200AA0CB2 /* LoadingWindowController.swift */; };
-		7E71B0082089B27200AA0CB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E71B0062089B27200AA0CB2 /* Main.storyboard */; };
-		7E71B0112089B28000AA0CB2 /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E71B0092089B28000AA0CB2 /* CircularButton.swift */; };
-		7E71B0122089B28000AA0CB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E71B00A2089B28000AA0CB2 /* AppDelegate.swift */; };
-		7E71B0132089B28000AA0CB2 /* CustomRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E71B00B2089B28000AA0CB2 /* CustomRowView.swift */; };
-		7E71B0142089B28000AA0CB2 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E71B00C2089B28000AA0CB2 /* AboutViewController.swift */; };
-		7E71B0152089B28000AA0CB2 /* OpenCVMethods.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E71B00E2089B28000AA0CB2 /* OpenCVMethods.mm */; };
-		7E71B0162089B28000AA0CB2 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E71B0102089B28000AA0CB2 /* LoadingViewController.swift */; };
-		7E7A9B7B20AD092600E8CC9C /* CNN_ZH63_MODEL.md in Resources */ = {isa = PBXBuildFile; fileRef = 7E7A9B7A20AD092600E8CC9C /* CNN_ZH63_MODEL.md */; };
-		7E7A9B7D20AD234C00E8CC9C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7A9B7C20AD234C00E8CC9C /* DetailView.swift */; };
-		7E7A9B7F20AD236100E8CC9C /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E7A9B7E20AD236100E8CC9C /* DetailView.xib */; };
-		7E7A9B8120AEAA1300E8CC9C /* PlateInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7A9B8020AEAA1300E8CC9C /* PlateInfoModel.swift */; };
-		7ED4536E20C94A0C00B91256 /* AudioTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED4536D20C94A0C00B91256 /* AudioTool.swift */; };
-		7EDD012E2089CA38000556A3 /* NYPlateJudge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD012B2089CA37000556A3 /* NYPlateJudge.cpp */; };
-		7EDD012F2089CA38000556A3 /* NYPlateDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD012D2089CA38000556A3 /* NYPlateDetect.cpp */; };
-		7EDD01312089CA51000556A3 /* svm.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7EDD01302089CA51000556A3 /* svm.xml */; };
-		7EDE3AB020A08C230091AA50 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDE3AAF20A08C230091AA50 /* VideoViewController.swift */; };
+		7EB0980820DAA46200A911D0 /* PlateInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB097E920DAA46200A911D0 /* PlateInfoModel.swift */; };
+		7EB0980920DAA46200A911D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB097EB20DAA46200A911D0 /* Main.storyboard */; };
+		7EB0980A20DAA46200A911D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB097ED20DAA46200A911D0 /* AppDelegate.swift */; };
+		7EB0980B20DAA46200A911D0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EB097EF20DAA46200A911D0 /* Info.plist */; };
+		7EB0980C20DAA46200A911D0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB097F120DAA46200A911D0 /* MainViewController.swift */; };
+		7EB0980D20DAA46200A911D0 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB097F220DAA46200A911D0 /* WindowController.swift */; };
+		7EB0980E20DAA46200A911D0 /* AboutWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB097F320DAA46200A911D0 /* AboutWindowController.swift */; };
+		7EB0980F20DAA46200A911D0 /* LoadingWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB097F420DAA46200A911D0 /* LoadingWindowController.swift */; };
+		7EB0981020DAA46200A911D0 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB097F520DAA46200A911D0 /* VideoViewController.swift */; };
+		7EB0981120DAA46200A911D0 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB097F620DAA46200A911D0 /* AboutViewController.swift */; };
+		7EB0981220DAA46200A911D0 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB097F720DAA46200A911D0 /* LoadingViewController.swift */; };
+		7EB0981320DAA46200A911D0 /* CustomCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB097F920DAA46200A911D0 /* CustomCellView.swift */; };
+		7EB0981420DAA46200A911D0 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB097FA20DAA46200A911D0 /* DetailView.swift */; };
+		7EB0981520DAA46200A911D0 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EB097FB20DAA46200A911D0 /* CustomCell.xib */; };
+		7EB0981620DAA46200A911D0 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EB097FC20DAA46200A911D0 /* DetailView.xib */; };
+		7EB0981720DAA46200A911D0 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB097FD20DAA46200A911D0 /* CustomButton.swift */; };
+		7EB0981820DAA46200A911D0 /* PlateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EB097FE20DAA46200A911D0 /* PlateCell.xib */; };
+		7EB0981920DAA46200A911D0 /* PlateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB097FF20DAA46200A911D0 /* PlateCell.swift */; };
+		7EB0981A20DAA46200A911D0 /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0980020DAA46200A911D0 /* CircularButton.swift */; };
+		7EB0981B20DAA46200A911D0 /* CustomRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0980120DAA46200A911D0 /* CustomRowView.swift */; };
+		7EB0981C20DAA46200A911D0 /* NSImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0980320DAA46200A911D0 /* NSImage+OpenCV.mm */; };
+		7EB0981D20DAA46200A911D0 /* AudioTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0980520DAA46200A911D0 /* AudioTool.swift */; };
+		7EB0981F20DAA49700A911D0 /* OpenCVMethods.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0981E20DAA49700A911D0 /* OpenCVMethods.mm */; };
+		7EB0983F20DAA4CE00A911D0 /* NYAutoRecognize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0982220DAA4CE00A911D0 /* NYAutoRecognize.cpp */; };
+		7EB0984020DAA4CE00A911D0 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0982520DAA4CE00A911D0 /* Utils.cpp */; };
+		7EB0984120DAA4CE00A911D0 /* NYCharacterPartition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0982820DAA4CE00A911D0 /* NYCharacterPartition.cpp */; };
+		7EB0984220DAA4CE00A911D0 /* NYCNNOCR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0982E20DAA4CE00A911D0 /* NYCNNOCR.cpp */; };
+		7EB0984320DAA4CE00A911D0 /* NYCharacterRecognition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0982F20DAA4CE00A911D0 /* NYCharacterRecognition.cpp */; };
+		7EB0984420DAA4CE00A911D0 /* NYCharacterJudge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0983020DAA4CE00A911D0 /* NYCharacterJudge.cpp */; };
+		7EB0984520DAA4CE00A911D0 /* NYPlateDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0983220DAA4CE00A911D0 /* NYPlateDetect.cpp */; };
+		7EB0984620DAA4CE00A911D0 /* NYPlateJudge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0983320DAA4CE00A911D0 /* NYPlateJudge.cpp */; };
+		7EB0984720DAA4CE00A911D0 /* NYPlateLocate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0983520DAA4CE00A911D0 /* NYPlateLocate.cpp */; };
+		7EB0984820DAA4CE00A911D0 /* NYCharacter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0983A20DAA4CE00A911D0 /* NYCharacter.cpp */; };
+		7EB0984920DAA4CE00A911D0 /* NYPlate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0983D20DAA4CE00A911D0 /* NYPlate.cpp */; };
+		7EB0984A20DAA4CE00A911D0 /* CacheQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0983E20DAA4CE00A911D0 /* CacheQueue.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7E042223209F0FC400263F49 /* CacheQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CacheQueue.cpp; sourceTree = "<group>"; };
-		7E042224209F0FC400263F49 /* CacheQueue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CacheQueue.hpp; sourceTree = "<group>"; };
-		7E04A8652097DCB100217A65 /* ZHCNN_MODEL.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ZHCNN_MODEL.md; sourceTree = "<group>"; };
-		7E04A8A32098459D00217A65 /* char_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = char_1.jpg; sourceTree = "<group>"; };
-		7E04A8A42098459D00217A65 /* char_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = char_3.jpg; sourceTree = "<group>"; };
-		7E04A8A52098459D00217A65 /* drawcar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drawcar.jpg; sourceTree = "<group>"; };
-		7E04A8A62098459E00217A65 /* plate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plate.jpg; sourceTree = "<group>"; };
-		7E04A8A72098459E00217A65 /* char_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = char_6.jpg; sourceTree = "<group>"; };
-		7E04A8A82098459E00217A65 /* char_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = char_2.jpg; sourceTree = "<group>"; };
-		7E04A8A92098459E00217A65 /* char_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = char_5.jpg; sourceTree = "<group>"; };
-		7E04A8AA2098459E00217A65 /* char_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = char_4.jpg; sourceTree = "<group>"; };
-		7E04A8AB2098459E00217A65 /* char_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = char_0.jpg; sourceTree = "<group>"; };
 		7E210C6D209D840100437453 /* 豫.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "豫.mp3"; sourceTree = "<group>"; };
 		7E210C6E209D840100437453 /* G.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = G.mp3; sourceTree = "<group>"; };
 		7E210C6F209D840100437453 /* 冀.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "冀.mp3"; sourceTree = "<group>"; };
@@ -248,32 +224,8 @@
 		7E210CAB209D840700437453 /* 闽.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "闽.mp3"; sourceTree = "<group>"; };
 		7E210CAC209D840700437453 /* K.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = K.mp3; sourceTree = "<group>"; };
 		7E210CAD209D840700437453 /* 贵.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "贵.mp3"; sourceTree = "<group>"; };
-		7E403B9E209BCFA50092799F /* ZHCNN_2MODEL.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ZHCNN_2MODEL.md; sourceTree = "<group>"; };
-		7E6C2F6420A188C30091629D /* PlateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateCell.swift; sourceTree = "<group>"; };
-		7E6C2F6620A188EB0091629D /* PlateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlateCell.xib; sourceTree = "<group>"; };
 		7E71AE352089B1C000AA0CB2 /* PLR_Vision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLR_Vision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E71AE3C2089B1C100AA0CB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7E71AE412089B1C100AA0CB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7E71AE422089B1C100AA0CB2 /* PLR_Vision.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PLR_Vision.entitlements; sourceTree = "<group>"; };
-		7E71AE482089B21700AA0CB2 /* PLR_Vision-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PLR_Vision-Bridging-Header.h"; sourceTree = "<group>"; };
-		7E71AE512089B23A00AA0CB2 /* NYCharacterPartition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYCharacterPartition.cpp; sourceTree = "<group>"; };
-		7E71AE522089B23A00AA0CB2 /* NYCharacterJudge.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYCharacterJudge.hpp; sourceTree = "<group>"; };
-		7E71AE542089B23A00AA0CB2 /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
-		7E71AE562089B23A00AA0CB2 /* NYPlateLocate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYPlateLocate.hpp; sourceTree = "<group>"; };
-		7E71AE572089B23A00AA0CB2 /* NYCNNOCR.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYCNNOCR.hpp; sourceTree = "<group>"; };
-		7E71AE582089B23A00AA0CB2 /* NYCharacterRecognition.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYCharacterRecognition.hpp; sourceTree = "<group>"; };
-		7E71AE592089B23A00AA0CB2 /* NYCharacter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYCharacter.cpp; sourceTree = "<group>"; };
-		7E71AE5A2089B23A00AA0CB2 /* NYAutoRecognize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYAutoRecognize.cpp; sourceTree = "<group>"; };
-		7E71AE5B2089B23A00AA0CB2 /* NYPlate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYPlate.hpp; sourceTree = "<group>"; };
-		7E71AE5C2089B23A00AA0CB2 /* NYPlateLocate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYPlateLocate.cpp; sourceTree = "<group>"; };
-		7E71AE5D2089B23A00AA0CB2 /* NYCNNOCR.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYCNNOCR.cpp; sourceTree = "<group>"; };
-		7E71AE5E2089B23A00AA0CB2 /* NYCharacter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYCharacter.hpp; sourceTree = "<group>"; };
-		7E71AE5F2089B23A00AA0CB2 /* NYCharacterRecognition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYCharacterRecognition.cpp; sourceTree = "<group>"; };
-		7E71AE602089B23A00AA0CB2 /* NYAutoRecognize.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYAutoRecognize.hpp; sourceTree = "<group>"; };
-		7E71AE612089B23A00AA0CB2 /* NYPlate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYPlate.cpp; sourceTree = "<group>"; };
-		7E71AE622089B23A00AA0CB2 /* NYCharacterPartition.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYCharacterPartition.hpp; sourceTree = "<group>"; };
-		7E71AE632089B23A00AA0CB2 /* NYCharacterJudge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYCharacterJudge.cpp; sourceTree = "<group>"; };
-		7E71AE662089B23A00AA0CB2 /* Utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Utils.hpp; sourceTree = "<group>"; };
 		7E71AE692089B23A00AA0CB2 /* scanFinished.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = scanFinished.aiff; sourceTree = "<group>"; };
 		7E71AE6B2089B23A00AA0CB2 /* libopencv_xphoto.3.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_xphoto.3.4.0.dylib; sourceTree = "<group>"; };
 		7E71AE6C2089B23A00AA0CB2 /* libopencv_objdetect.3.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_objdetect.3.4.0.dylib; sourceTree = "<group>"; };
@@ -583,33 +535,56 @@
 		7E71AFB62089B23B00AA0CB2 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
 		7E71AFB72089B23B00AA0CB2 /* manual.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = manual.html; sourceTree = "<group>"; };
 		7E71AFB82089B23B00AA0CB2 /* base64.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = base64.hpp; sourceTree = "<group>"; };
-		7E71AFF62089B26600AA0CB2 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		7E71AFF72089B26600AA0CB2 /* NSImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+OpenCV.h"; sourceTree = "<group>"; };
-		7E71AFF82089B26600AA0CB2 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		7E71AFF92089B26600AA0CB2 /* NSImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSImage+OpenCV.mm"; sourceTree = "<group>"; };
-		7E71AFFA2089B26600AA0CB2 /* AboutWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutWindowController.swift; sourceTree = "<group>"; };
-		7E71AFFB2089B26600AA0CB2 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
-		7E71AFFC2089B26600AA0CB2 /* CustomCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellView.swift; sourceTree = "<group>"; };
-		7E71AFFD2089B26600AA0CB2 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
-		7E71B0052089B27200AA0CB2 /* LoadingWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingWindowController.swift; sourceTree = "<group>"; };
-		7E71B0062089B27200AA0CB2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		7E71B0092089B28000AA0CB2 /* CircularButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
-		7E71B00A2089B28000AA0CB2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E71B00B2089B28000AA0CB2 /* CustomRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRowView.swift; sourceTree = "<group>"; };
-		7E71B00C2089B28000AA0CB2 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		7E71B00E2089B28000AA0CB2 /* OpenCVMethods.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVMethods.mm; sourceTree = "<group>"; };
-		7E71B0102089B28000AA0CB2 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
-		7E7A9B7A20AD092600E8CC9C /* CNN_ZH63_MODEL.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CNN_ZH63_MODEL.md; sourceTree = "<group>"; };
-		7E7A9B7C20AD234C00E8CC9C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		7E7A9B7E20AD236100E8CC9C /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
-		7E7A9B8020AEAA1300E8CC9C /* PlateInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateInfoModel.swift; sourceTree = "<group>"; };
-		7ED4536D20C94A0C00B91256 /* AudioTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTool.swift; sourceTree = "<group>"; };
-		7EDD012A2089CA37000556A3 /* NYPlateJudge.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYPlateJudge.hpp; sourceTree = "<group>"; };
-		7EDD012B2089CA37000556A3 /* NYPlateJudge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYPlateJudge.cpp; sourceTree = "<group>"; };
-		7EDD012C2089CA37000556A3 /* NYPlateDetect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYPlateDetect.hpp; sourceTree = "<group>"; };
-		7EDD012D2089CA38000556A3 /* NYPlateDetect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYPlateDetect.cpp; sourceTree = "<group>"; };
-		7EDD01302089CA51000556A3 /* svm.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = svm.xml; sourceTree = "<group>"; };
-		7EDE3AAF20A08C230091AA50 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		7EB097E920DAA46200A911D0 /* PlateInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlateInfoModel.swift; sourceTree = "<group>"; };
+		7EB097EB20DAA46200A911D0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7EB097EC20DAA46200A911D0 /* PLR_Vision.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = PLR_Vision.entitlements; sourceTree = "<group>"; };
+		7EB097ED20DAA46200A911D0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7EB097EE20DAA46200A911D0 /* PLR_Vision-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PLR_Vision-Bridging-Header.h"; sourceTree = "<group>"; };
+		7EB097EF20DAA46200A911D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EB097F120DAA46200A911D0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7EB097F220DAA46200A911D0 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		7EB097F320DAA46200A911D0 /* AboutWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutWindowController.swift; sourceTree = "<group>"; };
+		7EB097F420DAA46200A911D0 /* LoadingWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingWindowController.swift; sourceTree = "<group>"; };
+		7EB097F520DAA46200A911D0 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		7EB097F620DAA46200A911D0 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		7EB097F720DAA46200A911D0 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		7EB097F920DAA46200A911D0 /* CustomCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellView.swift; sourceTree = "<group>"; };
+		7EB097FA20DAA46200A911D0 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		7EB097FB20DAA46200A911D0 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		7EB097FC20DAA46200A911D0 /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		7EB097FD20DAA46200A911D0 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		7EB097FE20DAA46200A911D0 /* PlateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlateCell.xib; sourceTree = "<group>"; };
+		7EB097FF20DAA46200A911D0 /* PlateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlateCell.swift; sourceTree = "<group>"; };
+		7EB0980020DAA46200A911D0 /* CircularButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
+		7EB0980120DAA46200A911D0 /* CustomRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRowView.swift; sourceTree = "<group>"; };
+		7EB0980320DAA46200A911D0 /* NSImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSImage+OpenCV.mm"; sourceTree = "<group>"; };
+		7EB0980420DAA46200A911D0 /* NSImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+OpenCV.h"; sourceTree = "<group>"; };
+		7EB0980520DAA46200A911D0 /* AudioTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioTool.swift; sourceTree = "<group>"; };
+		7EB0981E20DAA49700A911D0 /* OpenCVMethods.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVMethods.mm; sourceTree = "<group>"; };
+		7EB0982220DAA4CE00A911D0 /* NYAutoRecognize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYAutoRecognize.cpp; sourceTree = "<group>"; };
+		7EB0982320DAA4CE00A911D0 /* NYAutoRecognize.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYAutoRecognize.hpp; sourceTree = "<group>"; };
+		7EB0982520DAA4CE00A911D0 /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		7EB0982620DAA4CE00A911D0 /* Utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Utils.hpp; sourceTree = "<group>"; };
+		7EB0982820DAA4CE00A911D0 /* NYCharacterPartition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYCharacterPartition.cpp; sourceTree = "<group>"; };
+		7EB0982920DAA4CE00A911D0 /* NYCharacterPartition.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYCharacterPartition.hpp; sourceTree = "<group>"; };
+		7EB0982B20DAA4CE00A911D0 /* NYCharacterJudge.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYCharacterJudge.hpp; sourceTree = "<group>"; };
+		7EB0982C20DAA4CE00A911D0 /* NYCNNOCR.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYCNNOCR.hpp; sourceTree = "<group>"; };
+		7EB0982D20DAA4CE00A911D0 /* NYCharacterRecognition.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYCharacterRecognition.hpp; sourceTree = "<group>"; };
+		7EB0982E20DAA4CE00A911D0 /* NYCNNOCR.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYCNNOCR.cpp; sourceTree = "<group>"; };
+		7EB0982F20DAA4CE00A911D0 /* NYCharacterRecognition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYCharacterRecognition.cpp; sourceTree = "<group>"; };
+		7EB0983020DAA4CE00A911D0 /* NYCharacterJudge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYCharacterJudge.cpp; sourceTree = "<group>"; };
+		7EB0983220DAA4CE00A911D0 /* NYPlateDetect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYPlateDetect.cpp; sourceTree = "<group>"; };
+		7EB0983320DAA4CE00A911D0 /* NYPlateJudge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYPlateJudge.cpp; sourceTree = "<group>"; };
+		7EB0983420DAA4CE00A911D0 /* NYPlateLocate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYPlateLocate.hpp; sourceTree = "<group>"; };
+		7EB0983520DAA4CE00A911D0 /* NYPlateLocate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYPlateLocate.cpp; sourceTree = "<group>"; };
+		7EB0983620DAA4CE00A911D0 /* NYPlateDetect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYPlateDetect.hpp; sourceTree = "<group>"; };
+		7EB0983720DAA4CE00A911D0 /* NYPlateJudge.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYPlateJudge.hpp; sourceTree = "<group>"; };
+		7EB0983920DAA4CE00A911D0 /* CacheQueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CacheQueue.hpp; sourceTree = "<group>"; };
+		7EB0983A20DAA4CE00A911D0 /* NYCharacter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYCharacter.cpp; sourceTree = "<group>"; };
+		7EB0983B20DAA4CE00A911D0 /* NYPlate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYPlate.hpp; sourceTree = "<group>"; };
+		7EB0983C20DAA4CE00A911D0 /* NYCharacter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NYCharacter.hpp; sourceTree = "<group>"; };
+		7EB0983D20DAA4CE00A911D0 /* NYPlate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NYPlate.cpp; sourceTree = "<group>"; };
+		7EB0983E20DAA4CE00A911D0 /* CacheQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CacheQueue.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -740,11 +715,7 @@
 		7E71AE2C2089B1C000AA0CB2 = {
 			isa = PBXGroup;
 			children = (
-				7E7A9B7A20AD092600E8CC9C /* CNN_ZH63_MODEL.md */,
-				7E403B9E209BCFA50092799F /* ZHCNN_2MODEL.md */,
-				7E04A8652097DCB100217A65 /* ZHCNN_MODEL.md */,
-				7EDD01302089CA51000556A3 /* svm.xml */,
-				7E71AE502089B23A00AA0CB2 /* NYPR */,
+				7EB0982020DAA4CE00A911D0 /* NYPR */,
 				7E71AE6A2089B23A00AA0CB2 /* OpenCVlibs */,
 				7E71AE682089B23A00AA0CB2 /* resources */,
 				7E71AE952089B23B00AA0CB2 /* TinyDNN */,
@@ -764,81 +735,21 @@
 		7E71AE372089B1C000AA0CB2 /* PLR_Vision */ = {
 			isa = PBXGroup;
 			children = (
-				7EDE3AAF20A08C230091AA50 /* VideoViewController.swift */,
-				7E71B00C2089B28000AA0CB2 /* AboutViewController.swift */,
-				7E71B00A2089B28000AA0CB2 /* AppDelegate.swift */,
-				7E71B0092089B28000AA0CB2 /* CircularButton.swift */,
-				7E71B00B2089B28000AA0CB2 /* CustomRowView.swift */,
-				7E71B0102089B28000AA0CB2 /* LoadingViewController.swift */,
+				7EB097F020DAA46200A911D0 /* Controller */,
+				7EB097E820DAA46200A911D0 /* Model */,
+				7EB097EA20DAA46200A911D0 /* Others */,
+				7EB0980220DAA46200A911D0 /* Tools */,
+				7EB097F820DAA46200A911D0 /* View */,
 				7E71B00D2089B28000AA0CB2 /* OpenCVInterface */,
-				7E71B0052089B27200AA0CB2 /* LoadingWindowController.swift */,
-				7E71B0062089B27200AA0CB2 /* Main.storyboard */,
-				7E71AFFA2089B26600AA0CB2 /* AboutWindowController.swift */,
-				7E71AFF62089B26600AA0CB2 /* CustomButton.swift */,
-				7E71AFFD2089B26600AA0CB2 /* CustomCell.xib */,
-				7E71AFFC2089B26600AA0CB2 /* CustomCellView.swift */,
-				7E71AFF82089B26600AA0CB2 /* MainViewController.swift */,
-				7E71AFF72089B26600AA0CB2 /* NSImage+OpenCV.h */,
-				7E71AFF92089B26600AA0CB2 /* NSImage+OpenCV.mm */,
-				7E71AFFB2089B26600AA0CB2 /* WindowController.swift */,
 				7E71AE3C2089B1C100AA0CB2 /* Assets.xcassets */,
-				7E71AE412089B1C100AA0CB2 /* Info.plist */,
-				7E71AE422089B1C100AA0CB2 /* PLR_Vision.entitlements */,
-				7E71AE482089B21700AA0CB2 /* PLR_Vision-Bridging-Header.h */,
-				7E6C2F6420A188C30091629D /* PlateCell.swift */,
-				7E6C2F6620A188EB0091629D /* PlateCell.xib */,
-				7E7A9B7C20AD234C00E8CC9C /* DetailView.swift */,
-				7E7A9B7E20AD236100E8CC9C /* DetailView.xib */,
-				7E7A9B8020AEAA1300E8CC9C /* PlateInfoModel.swift */,
-				7ED4536D20C94A0C00B91256 /* AudioTool.swift */,
 			);
 			path = PLR_Vision;
-			sourceTree = "<group>";
-		};
-		7E71AE502089B23A00AA0CB2 /* NYPR */ = {
-			isa = PBXGroup;
-			children = (
-				7EDD012D2089CA38000556A3 /* NYPlateDetect.cpp */,
-				7EDD012C2089CA37000556A3 /* NYPlateDetect.hpp */,
-				7EDD012B2089CA37000556A3 /* NYPlateJudge.cpp */,
-				7EDD012A2089CA37000556A3 /* NYPlateJudge.hpp */,
-				7E71AE512089B23A00AA0CB2 /* NYCharacterPartition.cpp */,
-				7E71AE622089B23A00AA0CB2 /* NYCharacterPartition.hpp */,
-				7E71AE522089B23A00AA0CB2 /* NYCharacterJudge.hpp */,
-				7E71AE632089B23A00AA0CB2 /* NYCharacterJudge.cpp */,
-				7E71AE582089B23A00AA0CB2 /* NYCharacterRecognition.hpp */,
-				7E71AE5F2089B23A00AA0CB2 /* NYCharacterRecognition.cpp */,
-				7E71AE562089B23A00AA0CB2 /* NYPlateLocate.hpp */,
-				7E71AE5C2089B23A00AA0CB2 /* NYPlateLocate.cpp */,
-				7E71AE572089B23A00AA0CB2 /* NYCNNOCR.hpp */,
-				7E71AE5D2089B23A00AA0CB2 /* NYCNNOCR.cpp */,
-				7E71AE5A2089B23A00AA0CB2 /* NYAutoRecognize.cpp */,
-				7E71AE602089B23A00AA0CB2 /* NYAutoRecognize.hpp */,
-				7E71AE592089B23A00AA0CB2 /* NYCharacter.cpp */,
-				7E71AE5E2089B23A00AA0CB2 /* NYCharacter.hpp */,
-				7E71AE5B2089B23A00AA0CB2 /* NYPlate.hpp */,
-				7E71AE612089B23A00AA0CB2 /* NYPlate.cpp */,
-				7E71AE662089B23A00AA0CB2 /* Utils.hpp */,
-				7E71AE542089B23A00AA0CB2 /* Utils.cpp */,
-				7E042223209F0FC400263F49 /* CacheQueue.cpp */,
-				7E042224209F0FC400263F49 /* CacheQueue.hpp */,
-			);
-			path = NYPR;
 			sourceTree = "<group>";
 		};
 		7E71AE682089B23A00AA0CB2 /* resources */ = {
 			isa = PBXGroup;
 			children = (
 				7E210BEA209D702800437453 /* AudioData */,
-				7E04A8AB2098459E00217A65 /* char_0.jpg */,
-				7E04A8A32098459D00217A65 /* char_1.jpg */,
-				7E04A8A82098459E00217A65 /* char_2.jpg */,
-				7E04A8A42098459D00217A65 /* char_3.jpg */,
-				7E04A8AA2098459E00217A65 /* char_4.jpg */,
-				7E04A8A92098459E00217A65 /* char_5.jpg */,
-				7E04A8A72098459E00217A65 /* char_6.jpg */,
-				7E04A8A52098459D00217A65 /* drawcar.jpg */,
-				7E04A8A62098459E00217A65 /* plate.jpg */,
 				7E71AE692089B23A00AA0CB2 /* scanFinished.aiff */,
 			);
 			path = resources;
@@ -1369,9 +1280,148 @@
 		7E71B00D2089B28000AA0CB2 /* OpenCVInterface */ = {
 			isa = PBXGroup;
 			children = (
-				7E71B00E2089B28000AA0CB2 /* OpenCVMethods.mm */,
+				7EB0981E20DAA49700A911D0 /* OpenCVMethods.mm */,
 			);
 			path = OpenCVInterface;
+			sourceTree = "<group>";
+		};
+		7EB097E820DAA46200A911D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7EB097E920DAA46200A911D0 /* PlateInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7EB097EA20DAA46200A911D0 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				7EB097EB20DAA46200A911D0 /* Main.storyboard */,
+				7EB097EC20DAA46200A911D0 /* PLR_Vision.entitlements */,
+				7EB097ED20DAA46200A911D0 /* AppDelegate.swift */,
+				7EB097EE20DAA46200A911D0 /* PLR_Vision-Bridging-Header.h */,
+				7EB097EF20DAA46200A911D0 /* Info.plist */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		7EB097F020DAA46200A911D0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7EB097F120DAA46200A911D0 /* MainViewController.swift */,
+				7EB097F220DAA46200A911D0 /* WindowController.swift */,
+				7EB097F320DAA46200A911D0 /* AboutWindowController.swift */,
+				7EB097F420DAA46200A911D0 /* LoadingWindowController.swift */,
+				7EB097F520DAA46200A911D0 /* VideoViewController.swift */,
+				7EB097F620DAA46200A911D0 /* AboutViewController.swift */,
+				7EB097F720DAA46200A911D0 /* LoadingViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7EB097F820DAA46200A911D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7EB097F920DAA46200A911D0 /* CustomCellView.swift */,
+				7EB097FA20DAA46200A911D0 /* DetailView.swift */,
+				7EB097FB20DAA46200A911D0 /* CustomCell.xib */,
+				7EB097FC20DAA46200A911D0 /* DetailView.xib */,
+				7EB097FD20DAA46200A911D0 /* CustomButton.swift */,
+				7EB097FE20DAA46200A911D0 /* PlateCell.xib */,
+				7EB097FF20DAA46200A911D0 /* PlateCell.swift */,
+				7EB0980020DAA46200A911D0 /* CircularButton.swift */,
+				7EB0980120DAA46200A911D0 /* CustomRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7EB0980220DAA46200A911D0 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				7EB0980320DAA46200A911D0 /* NSImage+OpenCV.mm */,
+				7EB0980420DAA46200A911D0 /* NSImage+OpenCV.h */,
+				7EB0980520DAA46200A911D0 /* AudioTool.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		7EB0982020DAA4CE00A911D0 /* NYPR */ = {
+			isa = PBXGroup;
+			children = (
+				7EB0982120DAA4CE00A911D0 /* Interface */,
+				7EB0982420DAA4CE00A911D0 /* Tools */,
+				7EB0982720DAA4CE00A911D0 /* CharacterSegment */,
+				7EB0982A20DAA4CE00A911D0 /* CharacterRecognition */,
+				7EB0983120DAA4CE00A911D0 /* PlateLocate */,
+				7EB0983820DAA4CE00A911D0 /* Model */,
+			);
+			path = NYPR;
+			sourceTree = "<group>";
+		};
+		7EB0982120DAA4CE00A911D0 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				7EB0982220DAA4CE00A911D0 /* NYAutoRecognize.cpp */,
+				7EB0982320DAA4CE00A911D0 /* NYAutoRecognize.hpp */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		7EB0982420DAA4CE00A911D0 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				7EB0982520DAA4CE00A911D0 /* Utils.cpp */,
+				7EB0982620DAA4CE00A911D0 /* Utils.hpp */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		7EB0982720DAA4CE00A911D0 /* CharacterSegment */ = {
+			isa = PBXGroup;
+			children = (
+				7EB0982820DAA4CE00A911D0 /* NYCharacterPartition.cpp */,
+				7EB0982920DAA4CE00A911D0 /* NYCharacterPartition.hpp */,
+			);
+			path = CharacterSegment;
+			sourceTree = "<group>";
+		};
+		7EB0982A20DAA4CE00A911D0 /* CharacterRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				7EB0982B20DAA4CE00A911D0 /* NYCharacterJudge.hpp */,
+				7EB0982C20DAA4CE00A911D0 /* NYCNNOCR.hpp */,
+				7EB0982D20DAA4CE00A911D0 /* NYCharacterRecognition.hpp */,
+				7EB0982E20DAA4CE00A911D0 /* NYCNNOCR.cpp */,
+				7EB0982F20DAA4CE00A911D0 /* NYCharacterRecognition.cpp */,
+				7EB0983020DAA4CE00A911D0 /* NYCharacterJudge.cpp */,
+			);
+			path = CharacterRecognition;
+			sourceTree = "<group>";
+		};
+		7EB0983120DAA4CE00A911D0 /* PlateLocate */ = {
+			isa = PBXGroup;
+			children = (
+				7EB0983220DAA4CE00A911D0 /* NYPlateDetect.cpp */,
+				7EB0983320DAA4CE00A911D0 /* NYPlateJudge.cpp */,
+				7EB0983420DAA4CE00A911D0 /* NYPlateLocate.hpp */,
+				7EB0983520DAA4CE00A911D0 /* NYPlateLocate.cpp */,
+				7EB0983620DAA4CE00A911D0 /* NYPlateDetect.hpp */,
+				7EB0983720DAA4CE00A911D0 /* NYPlateJudge.hpp */,
+			);
+			path = PlateLocate;
+			sourceTree = "<group>";
+		};
+		7EB0983820DAA4CE00A911D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7EB0983920DAA4CE00A911D0 /* CacheQueue.hpp */,
+				7EB0983A20DAA4CE00A911D0 /* NYCharacter.cpp */,
+				7EB0983B20DAA4CE00A911D0 /* NYPlate.hpp */,
+				7EB0983C20DAA4CE00A911D0 /* NYCharacter.hpp */,
+				7EB0983D20DAA4CE00A911D0 /* NYPlate.cpp */,
+				7EB0983E20DAA4CE00A911D0 /* CacheQueue.cpp */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1440,20 +1490,17 @@
 			files = (
 				7E210CD5209D840700437453 /* 宁.mp3 in Resources */,
 				7E210CC3209D840700437453 /* E.mp3 in Resources */,
+				7EB0981820DAA46200A911D0 /* PlateCell.xib in Resources */,
 				7E210CEC209D840700437453 /* 闽.mp3 in Resources */,
 				7E210CDE209D840700437453 /* 赣.mp3 in Resources */,
-				7E6C2F6720A188EB0091629D /* PlateCell.xib in Resources */,
 				7E210CD4209D840700437453 /* P.mp3 in Resources */,
 				7E210CD2209D840700437453 /* 新.mp3 in Resources */,
 				7E210CB8209D840700437453 /* Z.mp3 in Resources */,
 				7E210CD3209D840700437453 /* 京.mp3 in Resources */,
-				7E7A9B7B20AD092600E8CC9C /* CNN_ZH63_MODEL.md in Resources */,
 				7E71AFF32089B23B00AA0CB2 /* license.txt in Resources */,
-				7E71B0082089B27200AA0CB2 /* Main.storyboard in Resources */,
 				7E210CD8209D840700437453 /* 青.mp3 in Resources */,
 				7E210CC0209D840700437453 /* 鄂.mp3 in Resources */,
 				7E210CCC209D840700437453 /* 7.mp3 in Resources */,
-				7E7A9B7F20AD236100E8CC9C /* DetailView.xib in Resources */,
 				7E210CDA209D840700437453 /* 辽.mp3 in Resources */,
 				7E210CD1209D840700437453 /* 蒙.mp3 in Resources */,
 				7E210CC9209D840700437453 /* 8.mp3 in Resources */,
@@ -1465,13 +1512,10 @@
 				7E210CBE209D840700437453 /* 4.mp3 in Resources */,
 				7E210CB3209D840700437453 /* 渝.mp3 in Resources */,
 				7E210CE4209D840700437453 /* V.mp3 in Resources */,
+				7EB0980B20DAA46200A911D0 /* Info.plist in Resources */,
 				7E210CEE209D840700437453 /* 贵.mp3 in Resources */,
-				7E04A8B12098459E00217A65 /* char_2.jpg in Resources */,
 				7E210CCF209D840700437453 /* 粤.mp3 in Resources */,
-				7E04A8B22098459E00217A65 /* char_5.jpg in Resources */,
-				7EDD01312089CA51000556A3 /* svm.xml in Resources */,
 				7E210CED209D840700437453 /* K.mp3 in Resources */,
-				7E04A8B02098459E00217A65 /* char_6.jpg in Resources */,
 				7E210CE6209D840700437453 /* 5.mp3 in Resources */,
 				7E210CCD209D840700437453 /* 津.mp3 in Resources */,
 				7E210CE8209D840700437453 /* H.mp3 in Resources */,
@@ -1479,9 +1523,7 @@
 				7E210CBC209D840700437453 /* 黑.mp3 in Resources */,
 				7E71AFF52089B23B00AA0CB2 /* manual.html in Resources */,
 				7E210CD6209D840700437453 /* L.mp3 in Resources */,
-				7E04A8B42098459E00217A65 /* char_0.jpg in Resources */,
 				7E210CE9209D840700437453 /* 晋.mp3 in Resources */,
-				7E403B9F209BCFA50092799F /* ZHCNN_2MODEL.md in Resources */,
 				7E210CDD209D840700437453 /* 鲁.mp3 in Resources */,
 				7E210CE7209D840700437453 /* C.mp3 in Resources */,
 				7E210CDF209D840700437453 /* 吉.mp3 in Resources */,
@@ -1491,19 +1533,17 @@
 				7E210CBF209D840700437453 /* W.mp3 in Resources */,
 				7E210CB9209D840700437453 /* 沪.mp3 in Resources */,
 				7E210CB0209D840700437453 /* 冀.mp3 in Resources */,
+				7EB0980920DAA46200A911D0 /* Main.storyboard in Resources */,
 				7E210CBD209D840700437453 /* N.mp3 in Resources */,
+				7EB0981520DAA46200A911D0 /* CustomCell.xib in Resources */,
 				7E210CC4209D840700437453 /* Y.mp3 in Resources */,
-				7E04A8B32098459E00217A65 /* char_4.jpg in Resources */,
 				7E210CD7209D840700437453 /* D.mp3 in Resources */,
-				7E04A8AE2098459E00217A65 /* drawcar.jpg in Resources */,
 				7E210CB6209D840700437453 /* 甘.mp3 in Resources */,
 				7E71AFC62089B23B00AA0CB2 /* scanFinished.aiff in Resources */,
 				7E210CC1209D840700437453 /* 桂.mp3 in Resources */,
-				7E71B0042089B26600AA0CB2 /* CustomCell.xib in Resources */,
 				7E210CB5209D840700437453 /* M.mp3 in Resources */,
 				7E210CE0209D840700437453 /* J.mp3 in Resources */,
 				7E210CDB209D840700437453 /* 6.mp3 in Resources */,
-				7E04A8AC2098459E00217A65 /* char_1.jpg in Resources */,
 				7E210CE3209D840700437453 /* U.mp3 in Resources */,
 				7E210CE1209D840700437453 /* S.mp3 in Resources */,
 				7E71AFF12089B23B00AA0CB2 /* CPPLINT.cfg in Resources */,
@@ -1518,15 +1558,13 @@
 				7E210CC2209D840700437453 /* F.mp3 in Resources */,
 				7E210CCB209D840700437453 /* 陕.mp3 in Resources */,
 				7E210CE2209D840700437453 /* 0.mp3 in Resources */,
-				7E04A8662097DCB100217A65 /* ZHCNN_MODEL.md in Resources */,
 				7E71AFF22089B23B00AA0CB2 /* caffe.proto in Resources */,
 				7E210CD0209D840700437453 /* R.mp3 in Resources */,
 				7E210CAE209D840700437453 /* 豫.mp3 in Resources */,
 				7E210CB2209D840700437453 /* 浙.mp3 in Resources */,
 				7E210CBA209D840700437453 /* 云.mp3 in Resources */,
-				7E04A8AF2098459E00217A65 /* plate.jpg in Resources */,
-				7E04A8AD2098459E00217A65 /* char_3.jpg in Resources */,
 				7E210CEA209D840700437453 /* 湘.mp3 in Resources */,
+				7EB0981620DAA46200A911D0 /* DetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1537,36 +1575,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E71AFFE2089B26600AA0CB2 /* CustomButton.swift in Sources */,
-				7E71AFC02089B23B00AA0CB2 /* NYPlateLocate.cpp in Sources */,
-				7E71B0132089B28000AA0CB2 /* CustomRowView.swift in Sources */,
-				7E71AFBF2089B23B00AA0CB2 /* NYAutoRecognize.cpp in Sources */,
-				7E71B0112089B28000AA0CB2 /* CircularButton.swift in Sources */,
-				7E71B0162089B28000AA0CB2 /* LoadingViewController.swift in Sources */,
-				7E71AFC32089B23B00AA0CB2 /* NYPlate.cpp in Sources */,
-				7E71AFFF2089B26600AA0CB2 /* MainViewController.swift in Sources */,
-				7EDD012F2089CA38000556A3 /* NYPlateDetect.cpp in Sources */,
-				7E71AFBC2089B23B00AA0CB2 /* Utils.cpp in Sources */,
-				7E71AFBE2089B23B00AA0CB2 /* NYCharacter.cpp in Sources */,
-				7E71B0002089B26600AA0CB2 /* NSImage+OpenCV.mm in Sources */,
-				7E71AFC42089B23B00AA0CB2 /* NYCharacterJudge.cpp in Sources */,
-				7E71B0022089B26600AA0CB2 /* WindowController.swift in Sources */,
-				7ED4536E20C94A0C00B91256 /* AudioTool.swift in Sources */,
-				7E042225209F0FC400263F49 /* CacheQueue.cpp in Sources */,
-				7E71B0032089B26600AA0CB2 /* CustomCellView.swift in Sources */,
-				7E71AFBA2089B23B00AA0CB2 /* NYCharacterPartition.cpp in Sources */,
-				7E7A9B7D20AD234C00E8CC9C /* DetailView.swift in Sources */,
-				7E71B0072089B27200AA0CB2 /* LoadingWindowController.swift in Sources */,
-				7E6C2F6520A188C30091629D /* PlateCell.swift in Sources */,
-				7E7A9B8120AEAA1300E8CC9C /* PlateInfoModel.swift in Sources */,
-				7EDE3AB020A08C230091AA50 /* VideoViewController.swift in Sources */,
-				7E71B0012089B26600AA0CB2 /* AboutWindowController.swift in Sources */,
-				7E71B0122089B28000AA0CB2 /* AppDelegate.swift in Sources */,
-				7E71AFC22089B23B00AA0CB2 /* NYCharacterRecognition.cpp in Sources */,
-				7E71AFC12089B23B00AA0CB2 /* NYCNNOCR.cpp in Sources */,
-				7E71B0142089B28000AA0CB2 /* AboutViewController.swift in Sources */,
-				7EDD012E2089CA38000556A3 /* NYPlateJudge.cpp in Sources */,
-				7E71B0152089B28000AA0CB2 /* OpenCVMethods.mm in Sources */,
+				7EB0984720DAA4CE00A911D0 /* NYPlateLocate.cpp in Sources */,
+				7EB0984420DAA4CE00A911D0 /* NYCharacterJudge.cpp in Sources */,
+				7EB0981A20DAA46200A911D0 /* CircularButton.swift in Sources */,
+				7EB0984120DAA4CE00A911D0 /* NYCharacterPartition.cpp in Sources */,
+				7EB0980A20DAA46200A911D0 /* AppDelegate.swift in Sources */,
+				7EB0984520DAA4CE00A911D0 /* NYPlateDetect.cpp in Sources */,
+				7EB0981320DAA46200A911D0 /* CustomCellView.swift in Sources */,
+				7EB0984020DAA4CE00A911D0 /* Utils.cpp in Sources */,
+				7EB0980D20DAA46200A911D0 /* WindowController.swift in Sources */,
+				7EB0981020DAA46200A911D0 /* VideoViewController.swift in Sources */,
+				7EB0981B20DAA46200A911D0 /* CustomRowView.swift in Sources */,
+				7EB0981720DAA46200A911D0 /* CustomButton.swift in Sources */,
+				7EB0984820DAA4CE00A911D0 /* NYCharacter.cpp in Sources */,
+				7EB0981D20DAA46200A911D0 /* AudioTool.swift in Sources */,
+				7EB0984A20DAA4CE00A911D0 /* CacheQueue.cpp in Sources */,
+				7EB0984320DAA4CE00A911D0 /* NYCharacterRecognition.cpp in Sources */,
+				7EB0981C20DAA46200A911D0 /* NSImage+OpenCV.mm in Sources */,
+				7EB0984220DAA4CE00A911D0 /* NYCNNOCR.cpp in Sources */,
+				7EB0984620DAA4CE00A911D0 /* NYPlateJudge.cpp in Sources */,
+				7EB0981F20DAA49700A911D0 /* OpenCVMethods.mm in Sources */,
+				7EB0980F20DAA46200A911D0 /* LoadingWindowController.swift in Sources */,
+				7EB0981420DAA46200A911D0 /* DetailView.swift in Sources */,
+				7EB0980820DAA46200A911D0 /* PlateInfoModel.swift in Sources */,
+				7EB0980C20DAA46200A911D0 /* MainViewController.swift in Sources */,
+				7EB0981220DAA46200A911D0 /* LoadingViewController.swift in Sources */,
+				7EB0984920DAA4CE00A911D0 /* NYPlate.cpp in Sources */,
+				7EB0981920DAA46200A911D0 /* PlateCell.swift in Sources */,
+				7EB0981120DAA46200A911D0 /* AboutViewController.swift in Sources */,
+				7EB0983F20DAA4CE00A911D0 /* NYAutoRecognize.cpp in Sources */,
+				7EB0980E20DAA46200A911D0 /* AboutWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1706,7 +1744,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = NV97G7H6BN;
-				INFOPLIST_FILE = PLR_Vision/Info.plist;
+				INFOPLIST_FILE = PLR_Vision/Others/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1717,7 +1755,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.inkinc.PLR-Vision";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "PLR_Vision/PLR_Vision-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "PLR_Vision/Others/PLR_Vision-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
@@ -1731,7 +1769,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = NV97G7H6BN;
-				INFOPLIST_FILE = PLR_Vision/Info.plist;
+				INFOPLIST_FILE = PLR_Vision/Others/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1742,7 +1780,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.inkinc.PLR-Vision";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "PLR_Vision/PLR_Vision-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "PLR_Vision/Others/PLR_Vision-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
