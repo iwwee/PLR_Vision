@@ -1663,7 +1663,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					/Users/NathanYu/Desktop/PLR_Vision/PLR_Vision/TinyDNN,
+					"$(SRCROOT)/../PLR_Vision/TinyDNN",
 					/usr/local/include,
 				);
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
@@ -1723,7 +1723,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					/Users/NathanYu/Desktop/PLR_Vision/PLR_Vision/TinyDNN,
+					"$(SRCROOT)/../PLR_Vision/TinyDNN",
 					/usr/local/include,
 				);
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
